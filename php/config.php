@@ -1,0 +1,10 @@
+<?php
+define('DB_HOST','localhost');
+define('DB_USER','root');
+define('DB_PWD','root');
+define('DB_NAME','meetmovies');
+define('DB_PORT','3306');
+define('DB_TYPE','mysql');
+define('DB_CHARSET','utf8');
+define('DB_DSN',DB_TYPE.":host=".DB_HOST.";dbname=".DB_NAME.";charset=".DB_CHARSET);
+?>

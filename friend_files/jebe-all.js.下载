@@ -1,0 +1,1 @@
+define("jebe/main",["exports","jquery","jebe/advert"],function(e,n,a){e.init=function(e){n(".side-item-advert")&&(nx.data.jebe.load?a.init(e):(nx.data.jebe.css_url||(nx.data.jebe.css_url="http://s.xnimg.cn/a74152/nx/ads/css/advert.css"),nx.load(nx.data.jebe.css_url,function(){nx.data.jebe.load=!0,a.init(e)})))}});

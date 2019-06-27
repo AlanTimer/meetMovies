@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)http://www.17sucai.com/preview/1474877/2018-12-03/lt/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Direct Messaging</title>
+
+<link href="css/css" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="css/dialog_reset.min.css">
+
+
+<link rel="stylesheet" href="css/dialog_style.css">
+
+<script>
+    function f() {
+        var div = document.getElementById('message-box');
+        div.scrollTop = div.scrollHeight;
+        //alert(document.body.scrollHeight);
+        document.body.scrollTop=document.body.scrollHeight;
+
+    }
+</script>
+</head>
+
+<body onload="f()" style="overflow-y: hidden">
+
+  <div class="wrapper">
+    <div class="container"  >
+
+        <div class="right" >
+            <div class="top">
+                <span>To: <span class="name">Louis CK</span></span></div>
+            <div  id="message-box" class="chat active-chat" data-chat="person3" >
+                <div class="conversation-start">
+                    <span>Today, 3:38 AM</span>
+                </div>
+                <div class="bubble you" >
+                    Hey human!
+                </div>
+                <div class="bubble you">
+                    Umm... Someone took a shit in the hallway.
+                </div>
+                <div class="bubble me">
+                    ... what.
+                </div>
+                <div class="bubble me">
+                    Are you serious?
+                </div>
+                <div class="bubble you">
+                    I mean...
+                </div>
+                <div class="bubble you">
+                    It’s not that bad...
+                </div>
+                <div class="bubble you">
+                    But we’re probably gonna need a new carpet.
+                </div>
+                <div class="bubble you">
+                    It’s not that bad...
+                </div>
+                <div class="bubble you">
+                    But we’re probably gonna need a new carpet.
+                </div>
+                <div class="bubble me">
+                    ... what.
+                </div>
+                <div class="bubble me">
+                    Are you serious?
+                </div>
+                <div class="bubble me">
+                    ... what.
+                </div>
+                <div class="bubble me">
+                    Are you serious?
+                </div>
+                <div class="bubble me">
+                    ... what.
+                </div>
+                <div class="bubble me">
+                    Are you serious?
+                </div>
+                <div class="bubble me">
+                    ... what.
+                </div>
+                <div class="bubble me">
+                    Are you serious?
+                </div>
+            </div>
+
+
+
+            <div class="write" >
+                <a href="javascript:;" class="write-link attach"></a>
+                <input  id ="data" type="text">
+
+
+                <a  id="send"   class="write-link send"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="images/index.js.下载"></script>
+  <script>
+      (function () {
+          var socket = new WebSocket('ws://127.0.0.1:8008');
+         var send = document.getElementById('send');
+          var data = document.getElementById('data');
+          socket.onopen = function(event) {
+             alert("connect success");
+          };
+          socket.onerror = function() {
+              alert("connect error");
+          };
+          send.addEventListener('click', function() {
+              var content = data.value;
+              //alert(content);
+              if(content.length <= 0) {
+                  alert('消息不能为空！');
+                  return false;
+              }
+              var id=" <?php session_start(); echo $_SESSION['user']['Id']?>";
+
+              data.value='';
+              var message ={'id':id,'content':content};
+              var json = JSON.stringify(message);
+              socket.send(json);
+          });
+          socket.onmessage = function(event) {
+              var messagebox = document.getElementById('message-box');
+              var div = document.createElement('div');
+              var id=" <?php session_start(); echo $_SESSION['user']['Id']; ?>";
+              // alert(id);
+
+              var jsonData = JSON.parse(event.data);
+              var revId=jsonData.id;
+              // if(revId!=id){
+              //     div.className="bubble you"
+              // }
+              // else{
+              //     alert("==");
+              //     div.className="bubble me"
+              // }
+              div.className="bubble me";
+              div.innerHTML = jsonData.content;
+              messagebox.appendChild(div);
+              f();
+          };
+
+
+
+      })();
+  </script>
+
+
+
+
+
+
+</body></html>

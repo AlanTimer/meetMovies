@@ -1,0 +1,45 @@
+body {
+    position: relative;
+    margin: 100px 450px 100px 450px;
+    width: 400px;
+    height: 400px;
+    padding: 10px 5px 10px 20px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    background: #FFFFFF;
+}
+.find-demo-title{
+    font-size: 40px;
+    color: #34495e;
+    text-align: center;
+}
+
+.userword-send{
+    margin: 10px 60px 10px 110px;
+    background-color: cornflowerblue;
+    color: aliceblue;
+    text-align: center;
+    width: 120px;
+    height: 30px;
+    border-radius:8px;
+    font-size: 16px;
+}
+
+.demo1{
+    margin: 10px 5px 10px 40px;
+}
+
+.demo2 {
+    margin: 10px 5px 10px 60px;
+}
+
+.demo3 {
+    margin: 40px 100px 20px 100px;
+    background-color: cornflowerblue;
+    color: aliceblue;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    border-radius:8px;
+    font-size: 20px;
+}

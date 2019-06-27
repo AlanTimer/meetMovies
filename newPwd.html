@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>影友-找回密码</title>
+    <link rel="shortcut icon" href="images/logo.ico">
+    <link rel="stylesheet" href=css/newPwd.css>
+    <script src="script/newPwd.js"></script>
+</head>
+<body>
+    <!--  TODO: 将新密码保存到数据库中，更新密码  -->
+    <form action="register_server.php" method="post">
+        <div class="form-section">
+            <div class="title-demo">重置密码</div>
+            <div class="form-fields-col2">
+                <!-- 密码 -->
+                <div class="form-field2">
+                    <label for="password">新密码</label>
+                    <input id="password" class="password " autocomplete="off" aria-describedby="error-password" aria-labelledby="helpertext"
+                           style="color:#999;border-radius: 3px;width: 200px;height: 25px;"
+                           name="password" type="password" maxlength="20" minlength="6" value="" required="required">
+                    <span id="tips2"></span>
+                </div>
+                <div class="form-field3">
+                    <!--确认密码 -->
+                    <label for="password-confirm">确认密码</label>
+                    <input id="password-confirm" class="password-confirm " autocomplete="off" aria-describedby="error-password-confirm"
+                           style="color:#999;border-radius: 3px;width: 200px;height: 25px;"
+                           name="re_password" type="password" maxlength="20" minlength="6" value="" onkeyup="affirmPwd()" required="required">
+                    <span id="tips3"></span>
+                </div>
+            </div>
+        </div>
+        <div class="form-submit-section">
+            <!-- 重置密码-->
+            <label for="new-btn"></label>
+            <input id="new-btn" class="new-btn" type="submit" value="重置密码" name="newPwd"
+                   onmousedown="validPwd()">
+        </div>
+        <br>
+        <p><?php echo $err?></p>
+        <br>
+    </form>
+</body>
+</html>

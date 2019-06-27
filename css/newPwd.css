@@ -1,0 +1,40 @@
+body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    width: 400px;
+    height: 240px;
+    padding: 40px 0;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    background: #FFFFFF;
+}
+.title-demo{
+    font-size: 40px;
+    color: #34495e;
+    text-align: center;
+}
+div.form-field2 {
+    margin: 40px 0px 10px 45px;
+}
+div.form-field3 {
+    margin: 10px 0px 30px 28px;
+}
+
+.demo-tip{
+    color: red;
+    font-size: 10px;
+}
+
+.new-btn{
+    margin: 5px 40px 5px 40px;
+    background-color: cornflowerblue;
+    color: aliceblue;
+    text-align: center;
+    width: 80%;
+    height: 50px;
+    border-radius:8px;
+    font-size: 24px;
+}

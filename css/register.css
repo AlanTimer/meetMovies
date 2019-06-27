@@ -1,0 +1,44 @@
+body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 500px;
+    padding: 40px 0;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    background: #FFFFFF;
+}
+span.logo{
+    color: white;
+    margin: 200px 50px 20px 80px;
+}
+div.form-field0 {
+    margin:20px 0px 10px 45px;
+}
+div.form-field1 {
+    margin: 10px 0px 10px 60px;
+}
+div.form-field2 {
+    margin: 10px 0px 10px 60px;
+}
+div.form-field3 {
+    margin: 10px 0px 70px 28px;
+}
+
+.demo-tip{
+    color: red;
+    font-size: 10px;
+}
+
+.reg-btn{
+    margin: 5px 40px 5px 40px;
+    background-color: cornflowerblue;
+    color: aliceblue;
+    text-align: center;
+    width: 80%;
+    height: 50px;
+    border-radius:8px;
+    font-size: 24px;
+}
