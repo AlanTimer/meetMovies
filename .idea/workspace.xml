@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca2e0c84-2758-4087-82c9-bc3ab80ba1ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/script/add_friend.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/get_start_chat_things.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/push_chat_to_sql.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/push_chat_to_sql.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.php" beforeDir="false" afterPath="$PROJECT_DIR$/debug.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,25 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/push_chat_to_sql.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/script/add_friend.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/debug.php">
+        <entry file="file://$PROJECT_DIR$/php/get_start_chat_things.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+            <state relative-caret-position="784">
+              <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -82,9 +68,15 @@
         <option value="$PROJECT_DIR$/chat interface.html" />
         <option value="$PROJECT_DIR$/chat_interface.html" />
         <option value="$PROJECT_DIR$/css/chat_interface_style.css" />
-        <option value="$PROJECT_DIR$/debug.php" />
         <option value="$PROJECT_DIR$/setup_friends.php" />
         <option value="$PROJECT_DIR$/php/push_chat_to_sql.php" />
+        <option value="$PROJECT_DIR$/php/get_chat_ids.php" />
+        <option value="$PROJECT_DIR$/php/get_message_from_sql.php" />
+        <option value="$PROJECT_DIR$/php/get_id_things.php" />
+        <option value="$PROJECT_DIR$/php/get_begin_chat_things.php" />
+        <option value="$PROJECT_DIR$/php/get_chat_things.php" />
+        <option value="$PROJECT_DIR$/debug.php" />
+        <option value="$PROJECT_DIR$/php/get_start_chat_things.php" />
       </list>
     </option>
   </component>
@@ -112,6 +104,11 @@
               <item name="meetMovies" type="b2602c69:ProjectViewProjectNode" />
               <item name="meetMovies" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="meetMovies" type="b2602c69:ProjectViewProjectNode" />
+              <item name="meetMovies" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -126,13 +123,14 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\phpStudy\WWW\meetMovies" />
       <recent name="D:\phpStudy\WWW\meetMovies\script" />
       <recent name="D:\phpStudy\WWW\meetMovies\css" />
-      <recent name="D:\phpStudy\WWW\meetMovies" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -157,7 +155,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561679103191</updated>
-      <workItem from="1561679105250" duration="7023000" />
+      <workItem from="1561679105250" duration="13367000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1561679681573</created>
@@ -194,11 +192,25 @@
       <option name="project" value="LOCAL" />
       <updated>1561685828804</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="好友完善">
+      <created>1561687584070</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1561687584070</updated>
+    </task>
+    <task id="LOCAL-00007" summary="数据库中写入信息">
+      <created>1561688819257</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1561688819257</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7023000" />
+    <option name="totallyTimeSpent" value="13367000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -212,26 +224,26 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" weight="0.32960895" />
-      <window_info anchor="bottom" id="Messages" weight="0.32960895" />
-      <window_info anchor="bottom" id="Terminal" sideWeight="0.49932975" weight="0.32960895" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.50067025" side_tool="true" weight="0.32960895" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32960895" />
-      <window_info anchor="right" id="Database" weight="0.3297587" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49932975" weight="0.32960895" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50067025" side_tool="true" weight="0.32960895" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.32960895" />
+      <window_info anchor="bottom" id="Messages" order="4" weight="0.32960895" />
+      <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" />
+      <window_info anchor="bottom" id="Run" order="8" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" weight="0.32960895" />
+      <window_info anchor="right" id="Database" order="0" weight="0.3297587" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +256,9 @@
     <MESSAGE value="say no to TODO" />
     <MESSAGE value="add chat template" />
     <MESSAGE value="add debug.php for session" />
-    <option name="LAST_COMMIT_MESSAGE" value="add debug.php for session" />
+    <MESSAGE value="好友完善" />
+    <MESSAGE value="数据库中写入信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="数据库中写入信息" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/css/main.css">
@@ -272,13 +286,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-557">
           <caret line="42" column="21" lean-forward="true" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/friends.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="26" column="30" lean-forward="true" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -332,13 +339,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat_interface.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="68" lean-forward="true" selection-start-line="4" selection-start-column="68" selection-end-line="4" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/make_verify.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -349,36 +349,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup_friends.php">
+    <entry file="file://$PROJECT_DIR$/setup_add_friend.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
-          <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/add_friend.php">
+    <entry file="file://$PROJECT_DIR$/friends.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_friend.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="15" column="81" lean-forward="true" selection-start-line="15" selection-start-column="81" selection-end-line="15" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/add_friend.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat_interface.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/change_password.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-454" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup_friends.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
-          <caret line="11" column="26" lean-forward="true" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/debug.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/get_message_from_sql.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/get_chat_things.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/get_id_things.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <caret line="16" column="36" lean-forward="true" selection-start-line="13" selection-end-line="16" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/add_friend.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="634">
+          <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/push_chat_to_sql.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="28">
+          <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/add_friend.js">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/php/get_start_chat_things.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="784">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

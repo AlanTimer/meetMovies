@@ -18,4 +18,3 @@ $res->bindParam(':Id',$Id);//绑定参数
 $res->execute();
 $user= $res->fetch(PDO::FETCH_ASSOC);  //返回一个索引为结果集列名的数组
 $_SESSION['user']=$user;
-include_once "setup_friends.php";            //引用文件
