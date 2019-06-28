@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="css/chat_interface_style.css">
 
 </head>
-<body>
+<body onload="get_friends_Id()">
 
 <div class="wrapper">
 	<div class="container">
@@ -20,12 +20,16 @@
                 <a href="javascript:;" class="search"></a>
             </div>
             <ul class="people">
-                <li class="person" data-chat="person1">
+
+                <li class="person"  data-chat="person1">
+                    <!--TODO need to be replaced by friend's head avatar -->
                     <img src="images/thomas.jpg" alt="" />
+                    <!--TODO need to be replaced by friend's name -->
                     <span class="name">Thomas Bangalter</span>
                     <span class="time">2:09 PM</span>
                     <span class="preview">I was wondering...</span>
                 </li>
+
                 <li class="person" data-chat="person2">
                     <img src="images/dog.png" alt="" />
                     <span class="name">Dog Woofson</span>
@@ -55,16 +59,19 @@
                     <img src="images/drake.jpg" alt="" />
                     <span class="name">Drake</span>
                     <span class="time">2:09 PM</span>
-                    <span class="preview">howdoyoudoaspace</span>
+                    <span class="preview">how do you do as pace</span>
                 </li>
             </ul>
         </div>
         <div class="right">
             <div class="top"><span>To: <span class="name">Dog Woofson</span></span></div>
-            <div class="chat" data-chat="person1">
+
+            <div class="chat"  data-chat="person1">
+                <!--TODO chat history for different friends -->
                 <div class="conversation-start">
                     <span>Today, 6:48 AM</span>
                 </div>
+                <!--the class kind need to be judged.is me? is you? -->
                 <div class="bubble you">
                     Hello,
                 </div>
@@ -74,7 +81,9 @@
                 <div class="bubble you">
                     I was wondering...
                 </div>
+
             </div>
+
             <div class="chat" data-chat="person2">
                 <div class="conversation-start">
                     <span>Today, 5:38 PM</span>
@@ -162,7 +171,7 @@
                 </div>
 
             </div>
-            <div class="chat" data-chat="person6">
+            <div class="chat" data-chat="person6" id="person6">
                 <div class="conversation-start">
                     <span>Monday, 1:27 PM</span>
                 </div>
@@ -184,14 +193,15 @@
             </div>
             <div class="write">
                 <a href="javascript:;" class="write-link attach"></a>
-                <input type="text" />
+                <input id="message" type="text" />
                 <a href="javascript:;" class="write-link smiley"></a>
-                <a href="javascript:;" class="write-link send"></a>
+                <a href="javascript:;"  onclick="send_message()" id="send" class="write-link send"></a>
             </div>
         </div>
     </div>
 </div>
-
+<script src="script/chat.js"></script>
+<script src="script/jquery.min.js"></script>
 <script  src="script/chat_interface_index.js"></script>
 
 </body>
