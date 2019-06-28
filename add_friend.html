@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html class="nx-mainfree">
 <head>
+    <script src="script/add_friend.js" >
+
+
+
+    </script>
     <script src="script/jquery.min.js"></script>
     <script src="script/friends.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -145,9 +150,9 @@
                                     <a class="friend-add-a curr-a" href="http://friend.renren.com/newfriends">添加好友</a>
                                 </li>
                                 <li class="friend-cur-group-li">
-                                    <a class="friend-cur-group-a " href="http://friend.renren.com/managefriends#nogo">
+                                    <a class="friend-cur-group-a " href="setup_friends.php">
                                         <span class="group-name fl" id="f_group-name">全部好友</span>
-                                        <span class="friend-cur-num-span" id="f_group-num">313</span>
+                                        <span class="friend-cur-num-span" id="f_group-num"></span>
                                     </a></li>
                             </ul>
                             <div class="search-box">
@@ -246,7 +251,7 @@
                                     <?php foreach($friends as $k=>$result){?>
                                     <li id="<?php echo $result['username'] ?>" class="friend-detail"  data-type="normal" data-name="<?php echo $result['username'] ?>" id="friendsli331726201">
                                         <a class="tiny_photo userhead" href="http://www.renren.com/profile.do?id=331726201" target="_blank">
-                                            <img src="<?php echo $result['picture']?>" data-list="card" class="userheadimg large"
+                                            <img src="images/user/<?php echo $result['picture']?>" data-list="card" class="userheadimg large"
                                                  onload="photoAdjust(this, 168, 150)" width="168" height="168" style="display: inline; visibility: visible;" />
                                         </a>
                                         <ul class="friends-item-con">
@@ -260,7 +265,7 @@
                                             <li class="friends-com-info " data-id="331726201">56个共同好友</li>
                                         </ul>
                                         <div class="friends-item-btn" data-id="331726201">
-                                            <span class="add-name-list">+关注好友</span>
+                                            <span id="<?php echo $result['Id'] ?>" onclick="add1(this)" class="add-name-list">+关注好友</span>
                                         </div>
                                     </li>
 
@@ -613,5 +618,6 @@
     </iframe>
 </div>
 <iframe src="friend_files/ajaxproxy.html" style="display: none;"></iframe>
+
 </body>
 </html>
