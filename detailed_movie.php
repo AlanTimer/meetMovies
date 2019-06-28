@@ -9,4 +9,4 @@ $result=$pdo->prepare($sql);
 $result->execute();
 $data=$result->fetch(PDO::FETCH_ASSOC);
 
-include_once '';
+include_once 'movieDetails.html';

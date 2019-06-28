@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="referrer" content="never">
+    <title>影友-电影搜索</title>
+    <link rel="shortcut icon" href="images/logo.ico">
+    <link rel="stylesheet" href="css/searchMovie.css">
+</head>
+<body>
+    <div class="big-title">
+        <a href="index.html" title="影友">
+            <img class="logo" src="images/logo.png">
+        </a>
+        <!--TODO :点击搜索把影片名/年代等关键词传给后端，然后显示结果-->
+        <form method="post" id="search-form" action="recommend_server.php">
+                <span>
+                    <input type="text" name="word" id="word" class="search-text" placeholder="影片名 / 演员 / 导演  / 编剧 / 年代">
+                    <input type="submit" value="搜索一下" class="search-submit">
+                </span>
+        </form>
+        <!--TODO :点击搜索把排序依据传给后端，然后刷新结果-->
+        <form action="post" id="search-sort" action="">
+            <ul class="sort" id="sort">
+                <li>
+                    <input class="sort-t" id="sort-time" type="submit" name="sort-by-time" value="按时间排序">
+                </li>
+                <li>
+                    <input class="sort-t" id="sort-score" type="submit" name="sort-by-score" value="按分数排序">
+                </li>
+                <li>
+                    <input class="sort-t" id="sort-name" type="submit" name="sort-by-name" value="按名称排序">
+                </li>
+            </ul>
+        </form>
+        <!--TODO :点击搜索把标签关键词传给后端，然后显示结果-->
+        <form action="post" id="label-form" action="">
+            <ul class="label-all" id="label-all">
+                <li class="label-single" id="label-single-1">
+                    <input class="label-single" type="submit" name="动作片" value="动作片">
+                </li>
+                <li class="label-single" id="label-single-2">
+                    <input class="label-single" type="submit" name="犯罪片" value="犯罪片">
+                </li>
+                <li class="label-single" id="label-single-3">
+                    <input class="label-single" type="submit" name="科幻片" value="科幻片">
+                </li>
+                <li class="label-single" id="label-single-4">
+                    <input class="label-single" type="submit" name="喜剧片" value="喜剧片">
+                </li>
+                <li class="label-single" id="label-single-5">
+                    <input class="label-single" type="submit" name="爱情片" value="爱情片">
+                </li>
+                <li class="label-single" id="label-single-6">
+                    <input class="label-single" type="submit" name="悬疑片" value="悬疑片">
+                </li>
+                <li class="label-single" id="label-single-7">
+                    <input class="label-single" type="submit" name="恐怖片" value="恐怖片">
+                </li>
+                <li class="label-single" id="label-single-8">
+                    <input class="label-single" type="submit" name="战争片" value="战争片">
+                </li>
+                <li class="label-single" id="label-single-9">
+                    <input class="label-single" type="submit" name="动画片" value="动画片">
+                </li>
+                <li class="label-single" id="label-single-10">
+                    <input class="label-single" type="submit" name="冒险片" value="冒险片">
+                </li>
+                <li class="label-single" id="label-single-11">
+                    <input class="label-single" type="submit" name="惊悚片" value="惊悚片">
+                </li>
+                <li class="label-single" id="label-single-12">
+                    <input class="label-single" type="submit" name="奇幻片" value="奇幻片">
+                </li>
+                <li class="label-single" id="label-single-13">
+                    <input class="label-single" type="submit" name="剧情片" value="剧情片">
+                </li>
+                <li class="label-single" id="label-single-14">
+                    <input class="label-single" type="submit" name="纪录片" value="纪录片">
+                </li>
+                <li class="label-single" id="label-single-15">
+                    <input class="label-single" type="submit" name="灾难片" value="灾难片">
+                </li>
+            </ul>
+        </form>
+    </div>
+    <div class="label-border">
+        <hr class="labelDiv">
+    </div>
+
+
+</body>
+</html>

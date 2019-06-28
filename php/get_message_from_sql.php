@@ -17,7 +17,7 @@ try{
 $sql = "select * from chats where from_id = '$from' && to_id = '$chat_to_id'";
 $res = $pdo->prepare($sql);
 $res->execute();
-$row=$res->fetchAll();
-print_r($row);
+$row=$res->fetchAll(PDO::FETCH_ASSOC);
+echo json_encode($row);
 
 
