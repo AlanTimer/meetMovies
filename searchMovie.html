@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="referrer" content="never">
     <title>影友-电影搜索</title>
     <link rel="shortcut icon" href="images/logo.ico">
     <link rel="stylesheet" href="css/searchMovie.css">
@@ -9,12 +9,12 @@
 <body>
     <div class="big-title">
         <a href="index.html" title="影友">
-            <img src="images/logo.png">
+            <img class="logo" src="images/logo.png">
         </a>
         <!--TODO :点击搜索把影片名/年代等关键词传给后端，然后显示结果-->
-        <form action="post" id="search-form" action="">
+        <form method="post" id="search-form" action="recommend_server.php">
             <span>
-                <input type="text" name="s" id="s" class="search-text" placeholder="影片名 / 演员 / 导演  / 编剧 / 年代">
+                <input type="text" name="word" id="word" class="search-text" placeholder="影片名 / 演员 / 导演  / 编剧 / 年代">
                 <input type="submit" value="搜索一下" class="search-submit">
             </span>
         </form>
@@ -84,11 +84,46 @@
         </form>
     </div>
     <div class="label-border">
-        <hr>
+        <hr class="labelDiv">
     </div>
 
+
     <div class="list-movie">
-        <h1>展示内容部分</h1>
+        <?php foreach($data as $row){ ?>
+        <div class="listAll">
+            <div class="moviePic">
+<!--                图片-->
+                <img class="mvPic" src=" <?php echo $row['picture'] ?>">
+            </div>
+            <div class="movieScore">
+<!--                豆瓣xx分-->
+                豆瓣<?php echo $row['score'] ?>分
+            </div>
+            <span class="movieTitle">
+<!--                电影名称-->
+                <?php echo $row['name'] ?>
+            </span>
+            <div class="movieLabel">
+<!--                类型：xxxxxxxxxx；上映时间：xxxxx-->
+                类型：<?php echo $row['type'] ?>&nbsp&nbsp上映时间：<?php echo $row['release_date'] ?>
+            </div>
+            <div class="movieInfo">
+                制片国家/地区：<?php echo $row['producing_country'] ?>&nbsp&nbsp语言：<?php echo $row['language'] ?>
+            </div>
+            <div class="movieInfo2">
+<!--                导演：xxxx；编剧：xxxxxx；主演：xxxxx、xxxx、xxxx<br>-->
+<!--                制片国家/地区：xxxxx；语言：xxxx-->
+                导演：<?php echo $row['director'] ?>&nbsp&nbsp编剧：<?php echo $row['screenwriter'] ?>&nbsp&nbsp
+                演员：<?php echo $row['actor'] ?>
+            </div>
+            <div class="movieIntro">
+<!--                电影简介-->
+                简介：<?php echo $row['synopsis'] ?>
+            </div>
+            <hr class="movieDiv">
+        </div>
+        <?php } ?>
     </div>
+
 </body>
 </html>

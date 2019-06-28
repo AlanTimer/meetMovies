@@ -25,10 +25,9 @@ foreach ($row as $j => $k){
     $row2=$res->fetch(PDO::FETCH_ASSOC);
     $temp['chat_username']=$row2['username'];
     $temp['chat_picture']=$row2['picture'];
-    print_r($temp);
-    echo "<br>";
+    array_push($result,$temp);
 }
-
+echo json_encode($result);
 
 function change_time($time){
     $now=time();//现在时间
