@@ -5,7 +5,7 @@ class my_email
 {
     function sendMail($to,$content) {
         // 这个PHPMailer 就是之前从 Github上下载下来的那个项目
-        require 'PHPMailerAutoload.php';
+        require 'PHPMailer/PHPMailerAutoload.php';
 
         $mail = new PHPMailer;
         //使用smtp鉴权方式发送邮件
