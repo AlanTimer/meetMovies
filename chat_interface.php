@@ -35,7 +35,7 @@
 
             <?php for($i=0;$i<$friends_num;$i++){?>
 
-            <div class="chat" id="chat<?php echo $friends[$i]['chat_id']?>"  data-chat="person<?php echo $friends[$i]['chat_id']?>">
+            <div class="chat"  style="overflow-y: scroll" id="chat<?php echo $friends[$i]['chat_id']?>"  data-chat="person<?php echo $friends[$i]['chat_id']?>">
 
                 <?php for($j=0;$j<count($friends_message[$friends[$i]['chat_id']]);$j++){?>
                     <?php if($j==0){?>

@@ -199,7 +199,6 @@ body {
   border-style: solid;
   border-color: var(--light);
   height: calc(100% - 48px);
-  justify-content: flex-end;
   flex-direction: column;
 }
 .container .right .chat.active-chat {

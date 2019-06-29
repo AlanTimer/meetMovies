@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca2e0c84-2758-4087-82c9-bc3ab80ba1ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/chat_interface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/change_password_by_email.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_interface.php" beforeDir="false" afterPath="$PROJECT_DIR$/chat_interface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/chat_interface_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/chat_interface_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/check_email_verify.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/check_email_verify.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/send_email_verify.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/send_email_verify.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/script/chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/chat_interface_index.js" beforeDir="false" afterPath="$PROJECT_DIR$/script/chat_interface_index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setup_chat.php" beforeDir="false" afterPath="$PROJECT_DIR$/setup_chat.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,28 +39,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chat_interface.php">
+        <entry file="file://$PROJECT_DIR$/php/send_email_verify.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="73" column="14" lean-forward="true" selection-start-line="73" selection-start-column="14" selection-end-line="73" selection-end-column="14" />
+            <state relative-caret-position="252">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/chat_interface_index.js">
+        <entry file="file://$PROJECT_DIR$/php/check_email_verify.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="140">
-              <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/change_password.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="5" column="25" lean-forward="true" selection-end-line="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/script/chat.js">
+        <entry file="file://$PROJECT_DIR$/php/change_password_by_email.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+            <state relative-caret-position="168">
+              <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -93,7 +105,6 @@
         <option value="$PROJECT_DIR$/test/test.html" />
         <option value="$PROJECT_DIR$/css/reset.min.css" />
         <option value="$PROJECT_DIR$/chat interface.html" />
-        <option value="$PROJECT_DIR$/css/chat_interface_style.css" />
         <option value="$PROJECT_DIR$/php/push_chat_to_sql.php" />
         <option value="$PROJECT_DIR$/php/get_chat_ids.php" />
         <option value="$PROJECT_DIR$/php/get_id_things.php" />
@@ -129,7 +140,12 @@
         <option value="$PROJECT_DIR$/person_things.php" />
         <option value="$PROJECT_DIR$/chat_interface.php" />
         <option value="$PROJECT_DIR$/setup_chat.php" />
+        <option value="$PROJECT_DIR$/php/send_mail.php" />
+        <option value="$PROJECT_DIR$/php/send_email_verify.php" />
+        <option value="$PROJECT_DIR$/css/chat_interface_style.css" />
         <option value="$PROJECT_DIR$/script/chat.js" />
+        <option value="$PROJECT_DIR$/php/check_email_verify.php" />
+        <option value="$PROJECT_DIR$/php/change_password_by_email.php" />
       </list>
     </option>
   </component>
@@ -159,7 +175,7 @@
             <path>
               <item name="meetMovies" type="b2602c69:ProjectViewProjectNode" />
               <item name="meetMovies" type="462c0819:PsiDirectoryNode" />
-              <item name="script" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -172,7 +188,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/script" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -185,8 +201,8 @@
       <recent name="D:\phpStudy\WWW\meetMovies\php" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\phpStudy\WWW\meetMovies\script" />
       <recent name="D:\phpStudy\WWW\meetMovies" />
+      <recent name="D:\phpStudy\WWW\meetMovies\script" />
       <recent name="D:\phpStudy\WWW\meetMovies\css" />
     </key>
   </component>
@@ -215,7 +231,7 @@
       <workItem from="1561679105250" duration="31174000" />
       <workItem from="1561728768380" duration="645000" />
       <workItem from="1561764907557" duration="11152000" />
-      <workItem from="1561783992697" duration="8423000" />
+      <workItem from="1561783992697" duration="10010000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1561679681573</created>
@@ -308,11 +324,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561788836724</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="聊天界面优化">
+      <created>1561793520356</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1561793520356</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51394000" />
+    <option name="totallyTimeSpent" value="52981000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -325,7 +348,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2600536" />
@@ -367,27 +389,10 @@
     <MESSAGE value="整合搜索电影功能" />
     <MESSAGE value="上午成果" />
     <MESSAGE value="第一次接口整合" />
-    <option name="LAST_COMMIT_MESSAGE" value="第一次接口整合" />
+    <MESSAGE value="聊天界面优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="聊天界面优化" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/php/push_chat_to_sql.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/add_friend.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/get_chat__search_result.php" />
-    <entry file="file://$PROJECT_DIR$/kf.html" />
-    <entry file="file://$PROJECT_DIR$/recommend_server.php" />
-    <entry file="file://$PROJECT_DIR$/tes.php" />
     <entry file="file://$PROJECT_DIR$/images/smiley.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -402,13 +407,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="50" selection-start-column="50" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/chat_interface_style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6">
-          <caret line="288" column="14" lean-forward="true" selection-start-line="288" selection-start-column="14" selection-end-line="288" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -444,13 +442,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/findpassword_server.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -646,17 +637,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup_chat.php">
+    <entry file="file://$PROJECT_DIR$/findpassword_server.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+        <state relative-caret-position="588">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="4" selection-end-line="21" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chat_interface.php">
+    <entry file="file://$PROJECT_DIR$/css/chat_interface_style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="73" column="14" lean-forward="true" selection-start-line="73" selection-start-column="14" selection-end-line="73" selection-end-column="14" />
+        <state relative-caret-position="252">
+          <caret line="200" column="28" selection-start-line="200" selection-start-column="28" selection-end-line="200" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -667,10 +658,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/chat_interface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="79" column="7" lean-forward="true" selection-start-line="79" selection-start-column="7" selection-end-line="79" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/script/chat.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup_chat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" column="48" lean-forward="true" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/send_mail_verify.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="9" lean-forward="true" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/send_email_verify.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/check_email.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/check_email_verify.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
-          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/change_password.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="5" column="25" lean-forward="true" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/change_password_by_email.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
         </state>
       </provider>
     </entry>

@@ -3,12 +3,17 @@ function send_message() {
     var input=document.getElementById("message");
     var content=input.value;
    // alert(content);
+    var chat=document.getElementsByClassName('chat');
+    //alert(chat.id);
     var div=document.getElementById("chat2");
+   // alert(div.id);
     var newMsg=document.createElement('div');
     newMsg.className="bubble me";
     newMsg.innerHTML=content;
+   // alert(newMsg.innerHTML);
     div.appendChild(newMsg);
     input.value="";
+    div.scrollTop=div.scrollHeight;
 
 
 }
