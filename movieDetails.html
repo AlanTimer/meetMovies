@@ -5,80 +5,82 @@
     <title>影友-电影搜索</title>
     <link rel="shortcut icon" href="images/logo.ico">
     <link rel="stylesheet" href="css/searchMovie.css">
+    <link rel="stylesheet" href="css/movieDetails.css">
 </head>
 <body>
     <div class="big-title">
         <a href="index.html" title="影友">
             <img class="logo" src="images/logo.png">
         </a>
-        <!--TODO :点击搜索把影片名/年代等关键词传给后端，然后显示结果-->
-        <form method="post" id="search-form" action="recommend_server.php">
+        <!--点击搜索把影片名/年代等关键词传给后端，然后显示结果-->
+        <form method="post" id="search-form" action="search_movies.php">
                 <span>
-                    <input type="text" name="word" id="word" class="search-text" placeholder="影片名 / 演员 / 导演  / 编剧 / 年代">
+                    <input type="text" name="movies_keyword" id="movies_keyword" class="search-text"
+                           placeholder="影片名 / 导演 / 编剧 / 演员 ">
                     <input type="submit" value="搜索一下" class="search-submit">
                 </span>
         </form>
-        <!--TODO :点击搜索把排序依据传给后端，然后刷新结果-->
-        <form action="post" id="search-sort" action="">
+        <!--点击排序依据后把排序依据传给后端，然后刷新结果-->
+        <form method="post" id="search-sort" action="search_movies.php">
             <ul class="sort" id="sort">
                 <li>
-                    <input class="sort-t" id="sort-time" type="submit" name="sort-by-time" value="按时间排序">
+                    <input class="sort-t" id="sort-time" type="submit" name="order_type" value="按时间排序">
                 </li>
                 <li>
-                    <input class="sort-t" id="sort-score" type="submit" name="sort-by-score" value="按分数排序">
+                    <input class="sort-t" id="sort-score" type="submit" name="order_type" value="按评分排序">
                 </li>
                 <li>
-                    <input class="sort-t" id="sort-name" type="submit" name="sort-by-name" value="按名称排序">
+                    <input class="sort-t" id="sort-name" type="submit" name="order_type" value="按名称排序">
                 </li>
             </ul>
         </form>
-        <!--TODO :点击搜索把标签关键词传给后端，然后显示结果-->
-        <form action="post" id="label-form" action="">
+        <!--点击标签，然后把标签词传给后端，然后显示结果-->
+        <form method="post" id="label-form" action="search_movies.php">
             <ul class="label-all" id="label-all">
                 <li class="label-single" id="label-single-1">
-                    <input class="label-single" type="submit" name="动作片" value="动作片">
+                    <input class="label-single" type="submit" name="movies_type" value="动作片">
                 </li>
                 <li class="label-single" id="label-single-2">
-                    <input class="label-single" type="submit" name="犯罪片" value="犯罪片">
+                    <input class="label-single" type="submit" name="movies_type" value="犯罪片">
                 </li>
                 <li class="label-single" id="label-single-3">
-                    <input class="label-single" type="submit" name="科幻片" value="科幻片">
+                    <input class="label-single" type="submit" name="movies_type" value="科幻片">
                 </li>
                 <li class="label-single" id="label-single-4">
-                    <input class="label-single" type="submit" name="喜剧片" value="喜剧片">
+                    <input class="label-single" type="submit" name="movies_type" value="喜剧片">
                 </li>
                 <li class="label-single" id="label-single-5">
-                    <input class="label-single" type="submit" name="爱情片" value="爱情片">
+                    <input class="label-single" type="submit" name="movies_type" value="爱情片">
                 </li>
                 <li class="label-single" id="label-single-6">
-                    <input class="label-single" type="submit" name="悬疑片" value="悬疑片">
+                    <input class="label-single" type="submit" name="movies_type" value="悬疑片">
                 </li>
                 <li class="label-single" id="label-single-7">
-                    <input class="label-single" type="submit" name="恐怖片" value="恐怖片">
+                    <input class="label-single" type="submit" name="movies_type" value="恐怖片">
                 </li>
                 <li class="label-single" id="label-single-8">
-                    <input class="label-single" type="submit" name="战争片" value="战争片">
+                    <input class="label-single" type="submit" name="movies_type" value="战争片">
                 </li>
                 <li class="label-single" id="label-single-9">
-                    <input class="label-single" type="submit" name="动画片" value="动画片">
+                    <input class="label-single" type="submit" name="movies_type" value="动画片">
                 </li>
                 <li class="label-single" id="label-single-10">
-                    <input class="label-single" type="submit" name="冒险片" value="冒险片">
+                    <input class="label-single" type="submit" name="movies_type" value="冒险片">
                 </li>
                 <li class="label-single" id="label-single-11">
-                    <input class="label-single" type="submit" name="惊悚片" value="惊悚片">
+                    <input class="label-single" type="submit" name="movies_type" value="惊悚片">
                 </li>
                 <li class="label-single" id="label-single-12">
-                    <input class="label-single" type="submit" name="奇幻片" value="奇幻片">
+                    <input class="label-single" type="submit" name="movies_type" value="奇幻片">
                 </li>
                 <li class="label-single" id="label-single-13">
-                    <input class="label-single" type="submit" name="剧情片" value="剧情片">
+                    <input class="label-single" type="submit" name="movies_type" value="剧情片">
                 </li>
                 <li class="label-single" id="label-single-14">
-                    <input class="label-single" type="submit" name="纪录片" value="纪录片">
+                    <input class="label-single" type="submit" name="movies_type" value="纪录片">
                 </li>
                 <li class="label-single" id="label-single-15">
-                    <input class="label-single" type="submit" name="灾难片" value="灾难片">
+                    <input class="label-single" type="submit" name="movies_type" value="灾难片">
                 </li>
             </ul>
         </form>
@@ -86,7 +88,70 @@
     <div class="label-border">
         <hr class="labelDiv">
     </div>
-
-
+    <div class="movieDetail">
+        <div class="bigPic">
+            <img class="picMv" src="<?php echo $data['picture'] ?>" alt="影片图片">
+        </div>
+        <div class="bigTitle">
+            <?php echo $data['name'] ?>
+        </div>
+        <hr class="titleDiv">
+        <hr class="scoreDiv">
+        <div class="score">
+            <div class="totalScore">
+                豆瓣评分：<?php echo $data['score'] ?>
+            </div>
+            <div class="fivestar">
+                5星：<?php echo $data['five-star'] ?>
+            </div>
+            <div class="fourstar">
+                4星：<?php echo $data['four-star'] ?>
+            </div>
+            <div class="threestar">
+                3星：<?php echo $data['three-star'] ?>
+            </div>
+            <div class="twostar">
+                2星：<?php echo $data['two-star'] ?>
+            </div>
+            <div class="onestar">
+                1星：<?php echo $data['one-star'] ?>
+            </div>
+        </div>
+        <div class="detailInfo">
+            <div class="director">
+                导演：<?php echo $data['director'] ?>
+            </div>
+            <div class="screenwriter">
+                编剧：<?php echo $data['screenwriter'] ?>
+            </div>
+            <div class="actor">
+                演员：<?php echo $data['actor'] ?>
+            </div>
+            <div class="label">
+                类型：<?php echo $data['type'] ?>
+            </div>
+            <div class="area">
+                制片国家/地区：<?php echo $data['producing_country'] ?>
+            </div>
+            <div class="language">
+                语言：<?php echo $data['language'] ?>
+            </div>
+            <div class="date">
+                上映日期：<?php echo $data['release_date'] ?>
+            </div>
+            <div class="length">
+                片长：<?php echo $data['length'] ?>min
+            </div>
+            <div class="doubanLink">
+                豆瓣链接：<a href="<?php echo $data['link_douban'] ?>"><?php echo $data['link_douban'] ?></a>
+            </div>
+            <div class="IMDbLink">
+                IMDb链接：<a href="<?php echo $data['link_imdb'] ?>"><?php echo $data['link_imdb'] ?></a>
+            </div>
+        </div>
+        <div class="introduction">
+            剧情简介：<?php echo $data['synopsis'] ?>
+        </div>
+    </div>
 </body>
 </html>

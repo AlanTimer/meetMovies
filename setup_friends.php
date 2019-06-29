@@ -27,5 +27,4 @@ foreach ($friends_id as $k=>$user){
     array_push($friends,$temp);
 }
 
-//print_r(count($friends));
 include_once "friends.html";

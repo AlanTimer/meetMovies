@@ -24,13 +24,13 @@
         <ul>
             <li><a href="main.html">主界面</a></li>
             <li style="padding-left: 20px">
-                <form method="post" action="recommend_server.php" >
-                    <input type="text" name="word" placeholder="三千世界来搜一搜吧...">
+                <form method="post" action="search_movies.php" >
+                    <input type="text" name="search_keyword" placeholder="三千世界来搜一搜吧...">
                     <button type="submit" class="search"></button>
                 </form>
             </li>
             <li style="padding-left: 10px"><a href="setup_friends.php">我的好友</a></li>
-            <li><a href="dialog.html">聊天室</a></li>
+            <li><a href="setup_chat.php">聊天室</a></li>
 
         </ul>
         <ol>
@@ -176,7 +176,7 @@
                 <ul>
                     <a href="">
                         <li><span><?php echo $user['fans_num'] ?></span></li>
-                        <li>微博</li>
+                        <li>等级</li>
                     </a>
                 </ul>
             </div>

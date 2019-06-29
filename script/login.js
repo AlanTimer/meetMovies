@@ -17,8 +17,9 @@ function checkUserName() {
             else{
                 document.getElementById("login").disabled = false;
                 $.ajax({
-
+                    type: "POST",                       //提交方式
                     url:"php/seven_day_free_verification.php",            //发送请求的地址
+                    data:"username="+username,     //传递数据
                 })
                 window.location.href="main.html";
 

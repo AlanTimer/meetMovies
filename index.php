@@ -116,23 +116,23 @@
 <body>
 
 <div style="z-index: 10000" class="wenzi1">
-    <a href="login_server.php" style="color: aquamarine">登录</a>
+    <a href="login.php" style="color: aquamarine">登录</a>
 </div>
 
 <div style="z-index: 10000" class="wenzi2">
-    <a href="register_server.php" style="color: aquamarine">注册</a>
+    <a href="register.php" style="color: aquamarine">注册</a>
 </div>
 
 <div style="z-index: 10000" class="wenzi3">
-    <a href="" style="color: aquamarine">个人中心</a>
+    <a href="login.php" style="color: aquamarine">个人中心</a>
 </div>
 
 <div style="z-index: 10000" class="wenzi4">
-    <a href="" style="color: aquamarine">好友管理</a>
+    <a href="login.php" style="color: aquamarine">好友管理</a>
 </div>
 
 <div style="z-index: 10000" class="wenzi5">
-	<a href="" style="color: aquamarine">电影搜索</a>		
+	<a href="login.php" style="color: aquamarine">电影搜索</a>
 </div>
 
 <div style="z-index: 99" class="zuojiantou">

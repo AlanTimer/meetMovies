@@ -3,8 +3,13 @@ require "php/config.php";  //导入数据库配置文件
 header("Content-type:text/html;charset=utf-8"); //utf-8
 session_start();    //开启session
 //提交数据处理
-//如果提交的数据是电影类型
-if(isset($_POST['movies_type'])){
+//如果是搜索提交
+if(isset($_POST['search_keyword'])){
+    $_SESSION['movies_type']="";//电影类型为空,适配全部
+    $_SESSION['movies_keyword']=$_POST['search_keyword'];//电影名称
+    $_SESSION['order_type']="score";//排序类型默认为分数
+}//如果提交的数据是电影类型
+elseif(isset($_POST['movies_type'])){
     $real_type=substr($_POST['movies_type'],0,6);
     $_SESSION['movies_type']=$real_type;
 }//如果提交的数据是排序类型,规定name,release_date,score

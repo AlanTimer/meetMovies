@@ -49,14 +49,14 @@
     margin: 0;
     position: absolute;
     top: 120px;
-    left: 40px;
+    left: 110px;
 }
 
 .label-single{
     float: left;
-    margin: 0 5px 0 5px;
+    margin: 0 10px 0 5px;
     text-align: center;
-    width: 56px;
+    width: 50px;
     height: 24px;
     background-color: transparent;
     border-color: transparent;
@@ -79,6 +79,7 @@
 
 .sort-t{
     text-align: left;
+    outline: none;
     width: 80px;
     height: 18px;
     background-color: transparent;
@@ -128,6 +129,7 @@
 
 .movieTitle{
     position: absolute;
+    outline: none;
     width: 600px;
     height: 30px;
     margin-left: 180px;
@@ -170,7 +172,9 @@
     text-align: left;
     font-size: 14px;
     line-height: 20px;
+    white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .movieInfo2{

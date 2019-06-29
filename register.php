@@ -77,7 +77,7 @@ if(isset($_COOKIE['username']))
             <div class="ui message">
                 <span id="tips5"></span>
                 <span style="position: absolute;right: 5%;top: -5%;">
-                <a href="login_server.php">已有账号? 点击登录</a>
+                <a href="login.php">已有账号? 点击登录</a>
                 </span>
             </div>
         </div>

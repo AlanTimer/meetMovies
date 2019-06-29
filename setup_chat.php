@@ -39,7 +39,7 @@ foreach ($friends as  $k){
     $friends_message[$chat_to_id]=$row;
 }
 
-include "";
+include "chat_interface.html";
 
 function change_time($time){
     $now=time();//现在时间
