@@ -2,7 +2,8 @@
 function send_message() {
     var input=document.getElementById("message");
     var content=input.value;
-    var div=document.getElementById("person6");
+   // alert(content);
+    var div=document.getElementById("chat2");
     var newMsg=document.createElement('div');
     newMsg.className="bubble me";
     newMsg.innerHTML=content;
@@ -16,7 +17,7 @@ function get_friends_Id() {
         url:"php/get_start_chat_things.php",
         type:"POST",
         dataType:"json",
-        async: false,
+        async:false,
 
         success:function(result) {
             var ul=document.getElementById("chat_friends");
@@ -36,7 +37,7 @@ function get_friends_Id() {
                 //img.src="images/thomas.jpg"
                 span1.className="name";
                 span2.className="time";
-                span3.className="preview"
+                span3.className="preview";
                 span1.innerHTML=result[i]['chat_username'];
                 span2.innerHTML=result[i]['chat_last_time'];
                 span3.innerHTML='hahhahah 哈哈哈hahahh啊哈哈啊哈哈哈';
@@ -52,21 +53,21 @@ function get_friends_Id() {
                     type:"POST",
                     data:'chat_to_id='+chat_to_id,
                     dataType:"json",
-                    async: false,
+                    async:false,
                     success:function(result) {
                         //<div class="top"><span>To: <span class="name">Dog Woofson</span></span></div>
                         var div_right=document.getElementById('right');
-                        var div_top = document.createElement('div');
-                        div_top.className='top';
-                        var span_out=document.createElement('span');
-                        span_out.innerHTML='To:';
-                        var span_in=document.createElement('span');
-                        span_in.className="name";
-                        span_in.innerHTML=span1.innerHTML;
-                        span_out.appendChild(span_in);
-                        div_top.appendChild(span_out);
+                        /* var div_top = document.createElement('div');
+                         div_top.className='top';
+                         var span_out=document.createElement('span');
+                         span_out.innerHTML='To:';
+                         var span_in=document.createElement('span');
+                         span_in.className="name";
+                         span_in.innerHTML=span1.innerHTML;
+                         span_out.appendChild(span_in);
+                         div_top.appendChild(span_out);*/
 
-                        div_right.appendChild(div_top);
+                        // div_right.appendChild(div_top);
                         // <div class="chat"  data-chat="person1">
                         //         <!--TODO chat history for different friends -->
                         //     <div class="conversation-start">
@@ -126,6 +127,3 @@ function get_friends_Id() {
 
 
 }
-
-
-

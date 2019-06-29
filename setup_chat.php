@@ -13,13 +13,27 @@ $sql = "select * from chats where from_id = '$user_Id' || to_id = '$user_Id' ord
 $res = $pdo->prepare($sql);
 $res->execute();
 $row=$res->fetchAll(PDO::FETCH_ASSOC);
+
+$id_temp=array();//储存Id
 //遍历每一项
 foreach ($row as $j => $k){
+    if($k['to_id'] != $user_Id && !in_array($k['to_id'],$id_temp))
+        array_push($id_temp,$k['to_id']);
+    if($k['from_id'] != $user_Id && !in_array($k['from_id'],$id_temp))
+        array_push($id_temp,$k['from_id']);
+}
+
+//遍历每一项
+foreach ($id_temp as $id_num){
     $temp=array();
-    $temp['chat_last_time']=change_time($k['send_time']);
-    $temp['chat_id']=$k['Id'];
-    $Id=$k['Id'];//暂存Id
-    $sql = "select * from user where Id = '$Id' ";
+    $sql = "select * from chats where (from_id = '$user_Id' && to_id = '$id_num' )||
+                        (to_id = '$user_Id' && from_id = '$id_num' )  order by send_time DESC";
+    $res = $pdo->prepare($sql);
+    $res->execute();
+    $row=$res->fetch(PDO::FETCH_ASSOC);
+    $temp['chat_last_time']=change_time($row['send_time']);
+    $temp['chat_id']=$id_num;
+    $sql = "select * from user where Id = '$id_num' ";
     $res = $pdo->prepare($sql);
     $res->execute();
     $row2=$res->fetch(PDO::FETCH_ASSOC);
@@ -28,6 +42,7 @@ foreach ($row as $j => $k){
     array_push($friends,$temp);
 }
 
+$friends_num=count($friends);
 $friends_message=array();
 $from=$user_Id;
 foreach ($friends as  $k){
@@ -39,8 +54,8 @@ foreach ($friends as  $k){
     $friends_message[$chat_to_id]=$row;
 }
 
-include "chat_interface.html";
-
+include "chat_interface.php";
+//exit();
 function change_time($time){
     $now=time();//现在时间
     if(($now-$time)>(172800)){   //超过两天显示y-m-d
