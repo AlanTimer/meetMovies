@@ -1,11 +1,13 @@
 
 function send_message() {
+
     var input=document.getElementById("message");
     var content=input.value;
    // alert(content);
-    var chat=document.getElementsByClassName('chat');
-    //alert(chat.id);
-    var div=document.getElementById("chat2");
+    var chat=document.getElementsByClassName('active-chat');
+    //alert(chat[0].id);
+    var div=document.getElementById(chat[0].id);
+    //div.scrollTop=div.scrollHeight;
    // alert(div.id);
     var newMsg=document.createElement('div');
     newMsg.className="bubble me";

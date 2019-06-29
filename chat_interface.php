@@ -40,7 +40,7 @@
                 <?php for($j=0;$j<count($friends_message[$friends[$i]['chat_id']]);$j++){?>
                     <?php if($j==0){?>
                     <div class="conversation-start">
-                        <span><?php echo $friends_message[$friends[$i]['chat_id']][$j]['send_time']?></span>
+                        <span><?php echo date('Y-m-d H:i A',$friends_message[$friends[$i]['chat_id']][$j]['send_time'])?></span>
                     </div>
                     <?php }?>
 
