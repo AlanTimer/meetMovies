@@ -2,265 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca2e0c84-2758-4087-82c9-bc3ab80ba1ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/fonts/icons.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/fonts/icons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/fonts/icons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/fonts/icons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/fonts/icons.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/find_password.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/line.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/logo.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/logo2.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/user/5d185ecba05fc.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/find_password.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/highslide/highslide-full.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/highslide/highslide-full.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/highslide/highslide-full.packed.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/highslide/highslide-ie6.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/highslide/highslide-with-gallery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/highslide/highslide-with-gallery.packed.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/highslide/highslide-with-html.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/highslide/highslide-with-html.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/highslide/highslide-with-html.packed.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/highslide/highslide.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/highslide/highslide.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/highslide/highslide.packed.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/layer/extend/layer.ext.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/layer/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/layer/skin/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/layer/skin/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/layer/skin/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/layer/skin/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/layer/skin/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/layer/skin/layer.ext.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add_friend.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/advert.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/friends.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/roomkeeper.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/style1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/webpager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/friends.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/banner1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/banner2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/name-type.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/send.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/smiley.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/user/5d186125d1002.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/user/5d186c2874091.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/user/5d186c8930d3d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/user/5d187494da48d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/add_friend.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/friends.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/jquery-1.11.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/responsiveslides.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add_friend.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat_interface.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat_interface.php" beforeDir="false" afterPath="$PROJECT_DIR$/chat_interface.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/chat_interface_reset.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/chat_interface_reset.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/demo.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/demo_dialog.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/dialog_reset.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/dialog_style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/findpwd.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/highslide.css" beforeDir="false" afterPath="$PROJECT_DIR$/script/highslide/highslide.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/layer.css" beforeDir="false" afterPath="$PROJECT_DIR$/script/layer/skin/layer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/newPwd.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/personalLabel.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/personalLabel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/personalLabel1.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/register.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/reset.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/detailed_movie.php" beforeDir="false" afterPath="$PROJECT_DIR$/movie_details.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialog.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/findpassword.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/findpassword_server.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friendControl.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/L2YXD83o020051.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/LT1i8115p020051.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/a.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/advert.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/adx.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/ajaxproxy.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/auto_dup" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/base.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/base.js.下载" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/c.js.下载" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/fb.js.下载" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/friends-manage.js.下载" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/friends.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/groupsdata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_large_AYvj_7b430000b5c1113e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_large_AxuG_2f28000080741375.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_large_Bg6b_fa4900034e48113e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_large_EoBK_448a0000045d113e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_large_Ixb9_934b0000034d113e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_large_Mpmo_9abc0000034a113e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_large_NYxQ_3a7c000017df1375.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_large_Uy6X_70680000019a113e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_large_WH9Y_485900013a65195a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_large_WHdc_21860000a1311376.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_large_Wftu_24490002bc52113e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_large_fFpo_3a9700003731113e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_large_jA5a_719900074d4f2f76.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_large_jo2M_5634000657a82f76.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_large_kC7E_718500042e182f76.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_large_pNk4_098c00001dcd1376.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_large_pqTN_365d00000d9f111a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_large_q8wb_794d00003b372f75.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_large_xEBN_3dab000000c5111a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_large_ybED_e11d0001d605195a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_large_ygG6_5a6200001f601376.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_main_2NsV_b5ee00000191113e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_main_3qpW_7c6e000006c7111a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_main_BmN6_2137000000031375.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_main_U2VC_563a00043e612f76.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_main_UPqB_fd9c00014cfe195a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_main_VTwM_d85b00000f08113e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_main_WqUm_b63f000004f6113e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_main_fTW9_56330004421e2f76.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_main_ptKe_e0f900061eac195a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_tiny_gZxZ_6f920001bec62f76.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_tiny_hGl9_35840001a30d2f76.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_tiny_vu23_e1f90000da37195a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/h_tiny_zXV1_51d700014cf91986.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/icon-app201412.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/icon-myapp201412b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/ime.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/jebe-all.js.下载" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/large_IJA7_b050000087b9195a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/libs.js.下载" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/logo_d508a26.js.下载" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/men_tiny.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/messager.js.下载" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/o.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/original_AfWD_62f700002c371260.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/original_WXg4_750b00007df6195a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/original_irME_6b0a00003308125f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/original_lmQ1_4142000019c21191.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/roomkeeper.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/saved_resource.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/u=1978417358,2856506942&amp;fm=76" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/u=3358153767,355853620&amp;fm=76" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/ui_37c473c.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/webpager.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friend_files/wh.js.下载" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/friends.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/attachment.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/bo-jackson.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/dog.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/drake.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/drop-shadow.png" beforeDir="false" afterPath="$PROJECT_DIR$/script/highslide/graphics/outlines/drop-shadow.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/graphics/close.png" beforeDir="false" afterPath="$PROJECT_DIR$/script/highslide/graphics/close.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/graphics/closeX.png" beforeDir="false" afterPath="$PROJECT_DIR$/script/highslide/graphics/closeX.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/graphics/controlbar-black-border.gif" beforeDir="false" afterPath="$PROJECT_DIR$/script/highslide/graphics/controlbar-black-border.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/graphics/controlbar-text-buttons.png" beforeDir="false" afterPath="$PROJECT_DIR$/script/highslide/graphics/controlbar-text-buttons.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/graphics/controlbar-white-small.gif" beforeDir="false" afterPath="$PROJECT_DIR$/script/highslide/graphics/controlbar-white-small.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/graphics/controlbar-white.gif" beforeDir="false" afterPath="$PROJECT_DIR$/script/highslide/graphics/controlbar-white.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/graphics/controlbar2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/script/highslide/graphics/controlbar2.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/graphics/controlbar3.gif" beforeDir="false" afterPath="$PROJECT_DIR$/script/highslide/graphics/controlbar3.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/graphics/controlbar4-hover.gif" beforeDir="false" afterPath="$PROJECT_DIR$/script/highslide/graphics/controlbar4-hover.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/graphics/controlbar4.gif" beforeDir="false" afterPath="$PROJECT_DIR$/script/highslide/graphics/controlbar4.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/graphics/fullexpand.gif" beforeDir="false" afterPath="$PROJECT_DIR$/script/highslide/graphics/fullexpand.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/graphics/geckodimmer.png" beforeDir="false" afterPath="$PROJECT_DIR$/script/highslide/graphics/geckodimmer.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/graphics/icon.gif" beforeDir="false" afterPath="$PROJECT_DIR$/script/highslide/graphics/icon.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/graphics/loader.gif" beforeDir="false" afterPath="$PROJECT_DIR$/script/highslide/graphics/loader.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/graphics/loader.white.gif" beforeDir="false" afterPath="$PROJECT_DIR$/script/highslide/graphics/loader.white.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/graphics/outlines/Outlines.psd" beforeDir="false" afterPath="$PROJECT_DIR$/script/highslide/graphics/outlines/Outlines.psd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/graphics/outlines/beveled.png" beforeDir="false" afterPath="$PROJECT_DIR$/script/highslide/graphics/outlines/beveled.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/graphics/outlines/drop-shadow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/graphics/outlines/glossy-dark.png" beforeDir="false" afterPath="$PROJECT_DIR$/script/highslide/graphics/outlines/glossy-dark.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/graphics/outlines/outer-glow.png" beforeDir="false" afterPath="$PROJECT_DIR$/script/highslide/graphics/outlines/outer-glow.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/graphics/outlines/rounded-black.png" beforeDir="false" afterPath="$PROJECT_DIR$/script/highslide/graphics/outlines/rounded-black.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/graphics/outlines/rounded-white.png" beforeDir="false" afterPath="$PROJECT_DIR$/script/highslide/graphics/outlines/rounded-white.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/graphics/resize.gif" beforeDir="false" afterPath="$PROJECT_DIR$/script/highslide/graphics/resize.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/graphics/scrollarrows.png" beforeDir="false" afterPath="$PROJECT_DIR$/script/highslide/graphics/scrollarrows.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/graphics/zoomin.cur" beforeDir="false" afterPath="$PROJECT_DIR$/script/highslide/graphics/zoomin.cur" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/graphics/zoomout.cur" beforeDir="false" afterPath="$PROJECT_DIR$/script/highslide/graphics/zoomout.cur" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/index.js.下载" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/local_upload.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/lock.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/lock.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/login_banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/login_banner.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/login_banner.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logo_friend_page.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logo_half.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/louis-ck.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/michael-jordan.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/name-type.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/pic1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/pic2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/send.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/smiley.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/steve_07.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/steve_08.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/steve_09.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/thomas.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/user/user.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/user/user.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/个性标签.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/个性标签1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/个性标签2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/个性标签3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/个性标签4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/个性标签5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/个性标签6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/个性标签7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/公司动态.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/关于我们.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/友情链接1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/友情链接2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/友情链接3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/友情链接4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/右箭头.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/图1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/图2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/图3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/图4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/好友管理.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/好友管理1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/好友管理2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/好友管理3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/好友管理4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/导航.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/左箭头.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/影片一览1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/影片一览2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/影片一览3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/影片一览4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/影片一览5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/我们的服务.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/顶部背景图.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/searchMovie.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/searchMovie.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movieDetails.html" beforeDir="false" afterPath="$PROJECT_DIR$/movieDetails.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newPwd.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/person_things.php" beforeDir="false" afterPath="$PROJECT_DIR$/person_things.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/person_things_sever.php" beforeDir="false" afterPath="$PROJECT_DIR$/person_things_sever.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/personalLabel.html" beforeDir="false" afterPath="$PROJECT_DIR$/personal_label.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/add_friend.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/add_friend.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/check_email_verify.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/check_email_verify.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/check_login.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/check_login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/delete_friend.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/delete_friend.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/get_message_from_sql.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/get_message_from_sql.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/get_recommend_movies.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/get_recommend_movies.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/get_start_chat_things.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/logout_user.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/my_email.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/my_email.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/push_chat_to_sql.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/push_chat_to_sql.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/register_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/register_user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/save_setting.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/save_setting.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/send_email_verify.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/send_email_verify.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/seven_day_free_verification.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/add_friend.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/script/chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/chat_interface_index.js" beforeDir="false" afterPath="$PROJECT_DIR$/script/chat_interface_index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/script/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/findpassword.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/friends.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/highslide-with-gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/script/highslide/highslide-with-gallery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/script/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/script/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/layer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/script/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/meitu.js" beforeDir="false" afterPath="$PROJECT_DIR$/script/meitu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/newPwd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/personalLabel1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/php.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/script/register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/snowfall.jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/searchMovie.html" beforeDir="false" afterPath="$PROJECT_DIR$/searchMovie.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup_add_friend.php" beforeDir="false" afterPath="$PROJECT_DIR$/setup_add_friend.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup_chat.php" beforeDir="false" afterPath="$PROJECT_DIR$/setup_chat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup_friends.php" beforeDir="false" afterPath="$PROJECT_DIR$/setup_friends.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/个性标签.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -292,74 +64,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="171" column="4" lean-forward="true" selection-start-line="171" selection-start-column="4" selection-end-line="171" selection-end-column="4" />
+            <state relative-caret-position="288">
+              <caret line="116" column="37" lean-forward="true" selection-start-line="116" selection-start-column="37" selection-end-line="116" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/login.php">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="76" column="18" lean-forward="true" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/setup_chat.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/person_things_sever.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="11" column="43" lean-forward="true" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/person_things.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+            <state relative-caret-position="84">
+              <caret line="4" column="68" lean-forward="true" selection-start-line="4" selection-start-column="68" selection-end-line="4" selection-end-column="68" />
               <folding>
                 <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/searchMovie.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="97" column="88" selection-start-line="97" selection-start-column="88" selection-end-line="97" selection-end-column="88" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/script/chat_interface_index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="1" column="49" selection-start-line="1" selection-start-column="49" selection-end-line="1" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -389,7 +108,17 @@
       <find>password</find>
       <find>.ui.icon.in</find>
       <find>影片一览1</find>
+      <find>hd-nav clearfix</find>
+      <find>.nav</find>
+      <find>nav</find>
+      <find>body</find>
+      <find>container</find>
+      <find>height</find>
+      <find>box</find>
     </findStrings>
+    <replaceStrings>
+      <replace>.nav1</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -400,13 +129,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/chat_interface.html" />
-        <option value="$PROJECT_DIR$/php/get_recommand_movies.php" />
-        <option value="$PROJECT_DIR$/logout.php" />
-        <option value="$PROJECT_DIR$/php/seven_day_free_verification.php" />
-        <option value="$PROJECT_DIR$/detailed_movie.php" />
-        <option value="$PROJECT_DIR$/search_movies.php" />
-        <option value="$PROJECT_DIR$/php/send_mail.php" />
         <option value="$PROJECT_DIR$/css/chat_interface_style.css" />
         <option value="$PROJECT_DIR$/script/chat.js" />
         <option value="$PROJECT_DIR$/php/change_password_by_email.php" />
@@ -432,9 +154,7 @@
         <option value="$PROJECT_DIR$/php/save_setting.php" />
         <option value="$PROJECT_DIR$/script/meitu.js" />
         <option value="$PROJECT_DIR$/person_things_sever.php" />
-        <option value="$PROJECT_DIR$/searchMovie.html" />
         <option value="$PROJECT_DIR$/movieDetails.html" />
-        <option value="$PROJECT_DIR$/person_things.php" />
         <option value="$PROJECT_DIR$/setup_add_friend.php" />
         <option value="$PROJECT_DIR$/setup_friends.php" />
         <option value="$PROJECT_DIR$/css/chat_interface_reset.min.css" />
@@ -448,9 +168,18 @@
         <option value="$PROJECT_DIR$/php/get_recommend_movies.php" />
         <option value="$PROJECT_DIR$/chat_interface.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/main.html" />
         <option value="$PROJECT_DIR$/setup_chat.php" />
         <option value="$PROJECT_DIR$/script/chat_interface_index.js" />
+        <option value="$PROJECT_DIR$/css/searchMovie.css" />
+        <option value="$PROJECT_DIR$/searchMovie.html" />
+        <option value="$PROJECT_DIR$/friends.html" />
+        <option value="$PROJECT_DIR$/css/style1.css" />
+        <option value="$PROJECT_DIR$/css/bootstrap.css" />
+        <option value="$PROJECT_DIR$/css/main_index.css" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/person_things.php" />
+        <option value="$PROJECT_DIR$/main.html" />
       </list>
     </option>
   </component>
@@ -481,7 +210,7 @@
             <path>
               <item name="meetMovies" type="b2602c69:ProjectViewProjectNode" />
               <item name="meetMovies" type="462c0819:PsiDirectoryNode" />
-              <item name="script" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="meetMovies" type="b2602c69:ProjectViewProjectNode" />
@@ -497,7 +226,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../online" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -506,11 +235,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\phpStudy\WWW\meetMovies\script" />
-      <recent name="D:\phpStudy\WWW\meetMovies\css" />
       <recent name="D:\phpStudy\WWW\meetMovies" />
-      <recent name="D:\phpStudy\WWW\meetMovies\php" />
+      <recent name="D:\phpStudy\WWW\meetMovies\css" />
       <recent name="D:\phpStudy\WWW\meetMovies\images" />
+      <recent name="D:\phpStudy\WWW\meetMovies\script" />
+      <recent name="D:\phpStudy\WWW\meetMovies\php" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\phpStudy\WWW\meetMovies" />
@@ -545,7 +274,7 @@
       <workItem from="1561783992697" duration="15521000" />
       <workItem from="1561860192022" duration="6107000" />
       <workItem from="1561868476244" duration="21583000" />
-      <workItem from="1561945488534" duration="2284000" />
+      <workItem from="1561945488534" duration="11454000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1561679681573</created>
@@ -659,11 +388,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561800172932</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="1">
+      <created>1561948038746</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1561948038746</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88466000" />
+    <option name="totallyTimeSpent" value="97636000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -676,7 +412,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.27010724" />
@@ -704,7 +439,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1" />
     <MESSAGE value="第一次提交" />
     <MESSAGE value="稍微修改配置" />
     <MESSAGE value="say no to TODO" />
@@ -721,69 +455,10 @@
     <MESSAGE value="聊天界面优化" />
     <MESSAGE value="邮箱验证" />
     <MESSAGE value="连接优化版本一" />
-    <option name="LAST_COMMIT_MESSAGE" value="连接优化版本一" />
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/script/highslide/graphics/controlbar4.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/highslide/graphics/controlbar-text-buttons.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/highslide/graphics/fullexpand.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/layer/layer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/highslide/highslide-with-gallery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/change_password_by_email.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/find_password.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="58" column="61" selection-start-line="58" selection-start-column="61" selection-end-line="58" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/change_password.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="49" column="21" lean-forward="true" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/textarea.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-398" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/script/semantic.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6468">
@@ -817,13 +492,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/searchMovie.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -869,13 +537,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup_add_friend.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-258">
-          <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/chat_interface_reset.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -901,13 +562,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
           <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/semantic.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="10890" column="1" selection-start-line="10890" selection-start-column="1" selection-end-line="10890" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -997,13 +651,6 @@
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="171" column="4" lean-forward="true" selection-start-line="171" selection-start-column="4" selection-end-line="171" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/script/chat_interface_index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
@@ -1018,30 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/person_things.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-          <folding>
-            <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/searchMovie.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="97" column="88" selection-start-line="97" selection-start-column="88" selection-end-line="97" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -1049,17 +672,134 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/person_things_sever.php">
+    <entry file="file://$PROJECT_DIR$/css/searchMovie.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
-          <caret line="11" column="43" lean-forward="true" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/searchMovie.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="10" column="39" lean-forward="true" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/add_friend.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/webpager.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="116" selection-start-column="116" selection-end-column="116" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup_add_friend.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/friends.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="119" column="56" lean-forward="true" selection-start-line="119" selection-start-column="56" selection-end-line="119" selection-end-column="56" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#script#2;n#head#0;n#html#0;n#!!top" />
+            <element signature="e#756#892#0" />
+            <element signature="n#script#3;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#script#4;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_friend.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/responsiveslides.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1191">
+          <caret line="5036" column="7" lean-forward="true" selection-start-line="5036" selection-start-column="7" selection-end-line="5036" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main_index.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/person_things_sever.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/semantic.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="10890" column="1" selection-start-line="10890" selection-start-column="1" selection-end-line="10890" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="15" column="67" selection-start-line="15" selection-start-column="67" selection-end-line="15" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/person_things.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="76" column="18" lean-forward="true" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
+        <state relative-caret-position="102">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="116" column="37" lean-forward="true" selection-start-line="116" selection-start-column="37" selection-end-line="116" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="68" lean-forward="true" selection-start-line="4" selection-start-column="68" selection-end-line="4" selection-end-column="68" />
+          <folding>
+            <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
