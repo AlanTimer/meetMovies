@@ -24,7 +24,7 @@ class my_email
         // 该邮件的主题
         $mail->Subject = "影友网站验证码";
         // 该邮件的正文内容
-        $mail->Body = "您好，您的验证码是".$content;
+        $mail->Body = "您好，您的验证码是".$content.'  验证码三分钟内有效！';
 
         // 使用 send() 方法发送邮件
         if(!$mail->send()) {

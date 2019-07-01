@@ -3,13 +3,10 @@ header("Content-type:text/html;charset=utf-8");
 require 'php/config.php';//导入数据库配置文件
 session_start();
 $Id=$_SESSION['user']['Id'];
-//$Id=21;
 try{
-    //连接数据库、选择数据库
-    $pdo = new PDO(DB_DSN,DB_USER,DB_PWD);
+    $pdo = new PDO(DB_DSN,DB_USER,DB_PWD);//连接数据库、选择数据库
 }catch(PDOException $e){
-    //输出异常信息
-    echo $e->getMessage();
+    echo $e->getMessage();//输出异常信息
 }
 //user表中查找id
 $sql = 'select * from user where Id = :Id';

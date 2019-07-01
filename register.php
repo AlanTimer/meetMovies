@@ -1,14 +1,9 @@
-<!--七天登录免验证判断-->
-<?php
-if(isset($_COOKIE['username']))
-    header("Location:main.html");
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
-    <title>注册</title>
+    <title>影友-注册</title>
+    <link rel="shortcut icon" href="images/logo.ico">
     <!--引入css样式文件-->
     <link rel="stylesheet" type="text/css" href="css/semantic.css" />
     <link rel="stylesheet" type="text/css" href="css/login.css" />
@@ -24,7 +19,9 @@ if(isset($_COOKIE['username']))
 <div class="main">
     <div class="left">
         <div class="login-bg">
-            <img src="images/login_banner.png">
+            <a href="https://channel.jd.com/women.html">
+                <img src="images/login_banner.png" alt="图片加载失败">
+            </a>
         </div>
     </div>
     <div class="content">
@@ -41,7 +38,7 @@ if(isset($_COOKIE['username']))
                 </div>
                 <div class="field">
                     <div class="ui icon input">
-                        <i class="lock icon"></i>
+                        <i class="mail icon"></i>
                         <input id="email_addr" type="email" name="email" placeholder="邮箱" required="required"
                                onkeypress="checkEmailAddr()" onblur="check_Mail()">
                     </div>
@@ -82,6 +79,18 @@ if(isset($_COOKIE['username']))
             </div>
         </div>
         <!-- 推荐输入区结束 -->
+        <!-- 推荐用户开始 -->
+        <div class="recommend">
+            <div class="ui horizontal divider">
+                <h4 class="ui teal">推荐用户</h4>
+            </div>
+            <div class="ui tiny images">
+                <img class="ui medium circular image" src="images/steve_01.png"  alt="图片加载失败">
+                <img class="ui medium circular image" src="images/steve_02.png"  alt="图片加载失败">
+                <img class="ui medium circular image" src="images/steve_03.png"  alt="图片加载失败">
+            </div>
+        </div>
+        <!-- 推荐用户结束 -->
     </div>
 </div>
 <div class="clear"></div>

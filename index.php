@@ -53,7 +53,7 @@
             top: 468px;
             font-size: 20px;
         }
-		.wenzi5{
+        .wenzi5{
             position: absolute;
             left: 800px;
             top: 468px;
@@ -132,7 +132,7 @@
 </div>
 
 <div style="z-index: 10000" class="wenzi5">
-	<a href="login.php" style="color: aquamarine">电影搜索</a>
+    <a href="login.php" style="color: aquamarine">电影搜索</a>
 </div>
 
 <div style="z-index: 99" class="zuojiantou">

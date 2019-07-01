@@ -2,9 +2,12 @@
 header("Content-type:text/html;charset=utf-8"); //utf-8
 session_start();                    //开始 session
 require "php/config.php";
-//$user_Id=$_SESSION['user']['Id'];  //发送者的Id
+
+$_SESSION['user']['Id']='2';
+
+$user_Id=$_SESSION['user']['Id'];  //发送者的Id
 date_default_timezone_set('Asia/Shanghai');//'Asia/Shanghai'   亚洲/上海
-$user_Id='1';                       //测试发送者的Id
+//$user_Id='2';                       //测试发送者的Id
 $friends=array();    //返回数组
 //连接数据库、选择数据库
 $pdo = new PDO(DB_DSN,DB_USER,DB_PWD);
@@ -13,13 +16,27 @@ $sql = "select * from chats where from_id = '$user_Id' || to_id = '$user_Id' ord
 $res = $pdo->prepare($sql);
 $res->execute();
 $row=$res->fetchAll(PDO::FETCH_ASSOC);
+
+$id_temp=array();//储存Id
 //遍历每一项
 foreach ($row as $j => $k){
+    if($k['to_id'] != $user_Id && !in_array($k['to_id'],$id_temp))
+        array_push($id_temp,$k['to_id']);
+    if($k['from_id'] != $user_Id && !in_array($k['from_id'],$id_temp))
+        array_push($id_temp,$k['from_id']);
+}
+
+//遍历每一项
+foreach ($id_temp as $id_num){
     $temp=array();
-    $temp['chat_last_time']=change_time($k['send_time']);
-    $temp['chat_id']=$k['Id'];
-    $Id=$k['Id'];//暂存Id
-    $sql = "select * from user where Id = '$Id' ";
+    $sql = "select * from chats where (from_id = '$user_Id' && to_id = '$id_num' )||
+                        (to_id = '$user_Id' && from_id = '$id_num' )  order by send_time DESC";
+    $res = $pdo->prepare($sql);
+    $res->execute();
+    $row=$res->fetch(PDO::FETCH_ASSOC);
+    $temp['chat_last_time']=change_time($row['send_time']);
+    $temp['chat_id']=$id_num;
+    $sql = "select * from user where Id = '$id_num' ";
     $res = $pdo->prepare($sql);
     $res->execute();
     $row2=$res->fetch(PDO::FETCH_ASSOC);
@@ -39,10 +56,9 @@ foreach ($friends as  $k){
     $row=$res->fetchAll(PDO::FETCH_ASSOC);
     $friends_message[$chat_to_id]=$row;
 }
-//print_r(count($friends_message));
-//print_r($friends_message['2']['1']['message']);
-//print_r(count($friends_message['2']));
-
+//print_r($friends);
+//
+//print_r($friends_message);
 include "chat_interface.php";
 //exit();
 function change_time($time){

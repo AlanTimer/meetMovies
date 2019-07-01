@@ -5,11 +5,9 @@ require "php\config.php";
 $Id=$_SESSION['user']['Id'];
 $friends=array();
 try{
-    //连接数据库、选择数据库
-    $pdo = new PDO(DB_DSN,DB_USER,DB_PWD);
+    $pdo = new PDO(DB_DSN,DB_USER,DB_PWD); //连接数据库、选择数据库
 }catch(PDOException $e){
-    //输出异常信息
-    echo $e->getMessage();
+    echo $e->getMessage(); //输出异常信息
 }
 //user表中查找id
 $sql = 'select friend from friends where user = :Id';

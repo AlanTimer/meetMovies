@@ -95,7 +95,7 @@ body {
     height: 1px;
     overflow: hidden;
     color: #fff;
-    background-image: url("../../public/images/line.png");
+    background-image: url("../images/line.png");
 }
 .ui.tiny.images .image, .ui.tiny.images img, .ui.tiny.images svg, .ui.tiny.image {
     margin: 4px 12px;

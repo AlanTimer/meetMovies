@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="big-title">
-        <a href="index.html" title="影友">
+        <a href="main.html" title="影友">
             <img class="logo" src="images/logo.png">
         </a>
         <!--点击搜索把影片名/年代等关键词传给后端，然后显示结果-->
@@ -94,7 +94,7 @@
         <div class="listAll">
             <div class="mvPic">
                 <!--图片-->
-                <form method="post" id="picID" action="detailed_movie.php">
+                <form method="post" id="picID" action="movie_details.php">
                     <input class="moviePic" name="movie_name" type="image" src="<?php echo $row['picture'] ?>" alt="picture" value="<?php echo $row['name'] ?>">
                 </form>
             </div>
@@ -104,7 +104,7 @@
             </div>
             <div class="mvTitle">
                 <!--电影名称-->
-                <form method="post" id="titleID" action="detailed_movie.php">
+                <form method="post" id="titleID" action="movie_details.php">
                     <input class="movieTitle" name="movie_name" type="submit" value="<?php echo $row['name'] ?>">
                 </form>
             </div>

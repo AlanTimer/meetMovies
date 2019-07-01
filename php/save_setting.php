@@ -18,12 +18,8 @@ $res->bindParam(':sex',$sex);//绑定参数
 $res->bindParam(':qq',$qq);//绑定参数
 $res->bindParam(':email',$email);//绑定参数
 $res->bindParam(':Id',$Id);//绑定参数
+$res->execute();
+echo "<head><meta charset='utf-8'></head>";
+echo "<script> window.location.href='../person_things_sever.php';</script>";
 
-if($res->execute()){
-    echo "<head><meta charset='utf-8'></head>";
-    echo "<script> alert('保存成功');window.location.href='../person_things_sever.php';</script>";
-}else{
-    echo "<head><meta charset='utf-8'></head>";
-    echo "<script> alert('保存失败');window.location.href='../person_things_sever.php';</script>";
-}
 

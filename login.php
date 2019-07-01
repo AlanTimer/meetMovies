@@ -1,34 +1,27 @@
-<!--七天登录免验证判断-->
-<?php
-if(isset($_COOKIE['username']))
-    header("Location:main.html");
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
-    <title>登录</title>
+    <title>影友-登录</title>
     <!--引入css样式文件-->
     <link rel="stylesheet" type="text/css" href="css/semantic.css" />
+    <link rel="shortcut icon" href="images/logo.ico">
     <link rel="stylesheet" type="text/css" href="css/login.css" />
-
-    <style>
-
-    </style>
     <script src="script/jquery.min.js"></script>
     <script src="script/login.js"></script>
-
+    <script src="script/layer/layer.js"></script>
 </head>
 <body >
 <div class="header" title="头部" align="center">
-    <img src="images/logo.png">
+    <img src="images/logo.png"  alt="图片加载失败">
 </div>
 <!--  主体区域 -->
 <div class="main">
     <div class="left">
         <div class="login-bg">
-            <img src="images/login_banner.png">
+            <a href="https://channel.jd.com/women.html">
+                <img src="images/login_banner.png" alt="图片加载失败">
+            </a>
         </div>
     </div>
     <div class="content">
@@ -38,12 +31,12 @@ if(isset($_COOKIE['username']))
                 <h4 class="ui teal">推荐用户</h4>
             </div>
             <div class="ui tiny images">
-                <img class="ui medium circular image" src="images/steve_01.png">
-                <img class="ui medium circular image" src="images/steve_02.png">
-                <img class="ui medium circular image" src="images/steve_03.png">
-                <img class="ui medium circular image" src="images/steve_04.png">
-                <img class="ui medium circular image" src="images/steve_05.png">
-                <img class="ui medium circular image" src="images/steve_06.png">
+                <img class="ui medium circular image" src="images/steve_01.png"  alt="图片加载失败">
+                <img class="ui medium circular image" src="images/steve_02.png"  alt="图片加载失败">
+                <img class="ui medium circular image" src="images/steve_03.png"  alt="图片加载失败">
+                <img class="ui medium circular image" src="images/steve_04.png"  alt="图片加载失败">
+                <img class="ui medium circular image" src="images/steve_05.png"  alt="图片加载失败">
+                <img class="ui medium circular image" src="images/steve_06.png"  alt="图片加载失败">
             </div>
         </div>
         <!-- 推荐用户结束 -->
@@ -76,7 +69,7 @@ if(isset($_COOKIE['username']))
             </div>
                 <div class="ui message">
                 <span>
-                    <input type="checkbox" name="keep" id="keep" checked value="">7天免登录
+                     <a href="find_password.php">忘记密码? 点击找回</a>
                 </span>
                 <span style="position: absolute;right: 5%;">
                     <a href="register.php">暂无账号? 点击去注册</a>
@@ -94,8 +87,4 @@ if(isset($_COOKIE['username']))
     Copyright@2019华科实训
 </div>
 </body>
-<script>
-    if(document.getElementById("keep").checked)
-        document.getElementById("keep").value=1;
-</script>
 </html>

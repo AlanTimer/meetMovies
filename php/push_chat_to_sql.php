@@ -1,11 +1,11 @@
 <?php
-//session_start();
+session_start();
 require "config.php";
-$from=$_SESSION['user']['Id'];      //发送者的Id
+$from=$_POST['from'];
 $to=$_POST['to'];                   //接受者的Id
 $message=$_POST['message'];         //信息内容
-$time=time();                        //当前时间
-
+$time=$_POST['time'];
+print_r($from);
 try{
     //连接数据库、选择数据库
     $pdo = new PDO(DB_DSN,DB_USER,DB_PWD);
@@ -18,5 +18,5 @@ $sql = "insert into chats(from_id,to_id,message,send_time) values('$from','$to',
 $res = $pdo->prepare($sql);
 $res->execute();
 
-
+echo $from;
 

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/chat_interface_style.css">
 
 </head>
-<body  >
+<body  onload="initBar()" id="<?php echo $user_Id?>">
 
 <div class="wrapper">
     <div class="container">
@@ -46,11 +46,11 @@
 
                 <?php if($friends_message[$friends[$i]['chat_id']][$j]['to_id']
                 ==$friends[$i]['chat_id']){?>
-                    <div class="bubble me">
+                    <div class="bubble me" id="<?php echo $friends_message[$friends[$i]['chat_id']][$j]['send_time']?>">
                     <?php echo $friends_message[$friends[$i]['chat_id']][$j]['message']?>
                     </div>
                     <?php }else{?>
-                    <div class="bubble you">
+                    <div class="bubble you" id="<?php echo $friends_message[$friends[$i]['chat_id']][$j]['send_time']?>">
                         <?php echo $friends_message[$friends[$i]['chat_id']][$j]['message']?>
                     </div>
 
@@ -64,7 +64,7 @@
 
             <div class="write">
                 <a href="javascript:;" class="write-link attach"></a>
-                <input type="text" id="message">
+                <input type="text" id="message" ><!--onkeydown="enter_send(e)"-->
                 <a href="javascript:;" class="write-link smiley"></a>
                 <a href="javascript:;"  onclick="send_message()" class="write-link send"></a>
             </div>
@@ -73,9 +73,11 @@
             </div>
         </div>
     </div>
+
     <script src="script/chat.js"></script>
     <script src="script/jquery.min.js"></script>
     <script  src="script/chat_interface_index.js"></script>
+
 
 </body>
 </html>

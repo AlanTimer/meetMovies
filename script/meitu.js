@@ -14,7 +14,7 @@ $(function () {
         }
         xiuxiu.onUploadResponse = function (data)
         {
-            alert("上传响应" + data);
+            layer.msg('上传成功！');
             window.location.reload();
         }
     }

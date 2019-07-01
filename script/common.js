@@ -204,7 +204,7 @@ $(function(){
  * highslide展示图片效果
  */
 $(function(){
-    hs.graphicsDir = 'public/static/highslide/graphics/';
+    hs.graphicsDir = 'script/highslide/graphics/';
     hs.align = 'center';
     hs.transitions = ['expand', 'crossfade'];
     hs.wrapperClassName = 'dark borderless floating-caption';

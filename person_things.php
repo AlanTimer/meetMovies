@@ -6,14 +6,14 @@
     <link rel="stylesheet" type="text/css" href="css/semantic.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="Stylesheet" type="text/css" href="css/page.css"/>
-    <link rel="stylesheet" type="text/css" href="css/highslide.css" />
+    <link rel="stylesheet" type="text/css" href="script/highslide/highslide.css" />
 
     <script type="text/javascript" src="script/jquery.js" ></script>
     <script type="text/javascript" src="script/textarea.js"></script>
-    <script type="text/javascript" src="script/layer.js"></script>
+    <script type="text/javascript" src="script/layer/layer.js"></script>
     <script type="text/javascript" src="script/common.js"></script>
     <script type="text/javascript" src="script/semantic.js"></script>
-    <script type="text/javascript" src="script/highslide-with-gallery.js"></script>
+    <script type="text/javascript" src="script/highslide/highslide-with-gallery.js"></script>
     <script src="http://open.web.meitu.com/sources/xiuxiu.js" type="text/javascript"></script>
     <script src="script/meitu.js"></script>
 </head>
@@ -48,8 +48,8 @@
             </li>
             <li class="li_set">&nbsp;
                 <dl class="menu">
-                    <dd><a href="">个人中心</a></dd>
-                    <dd><a href="">退出</a></dd>
+                    <dd><a href="person_things_sever.php">个人中心</a></dd>
+                    <dd><a href="logout.php">退出</a></dd>
                 </dl>
             </li>
         </ol>
@@ -96,7 +96,7 @@
         </div>
         <!--个人基本信息-->
         <div class="ui bottom attached tab segment segment_new" data-tab="second">
-            <form class="ui form" method="post" action="php/save_setting.php">
+            <form id="sub"  class="ui form" method="post" action="php/save_setting.php">
                 <div class="field">
                     <label>用户名</label>
                     <input type="text"  value="<?php echo $user['username'] ?>" readonly>
@@ -129,7 +129,7 @@
                     <input type="text" name="email" value="<?php echo $user['email'] ?>">
                 </div>
 
-                <button class="ui teal button" type="submit">提交</button>
+                <button class="ui teal button" type="button" onclick="button_submit()">提交</button>
             </form>
         </div>
         <!--密码-->
@@ -221,8 +221,15 @@
 </div>
 <!--底部信息-->
 <div class="bottom_message width_1000">
-    <p>Copyright@2019华科实训影友</p>
+    <p>Copyright@2019华科实训</p>
 </div>
+
+<script type="text/javascript">
+    function button_submit(){
+        layer.msg('更改成功');
+        document.getElementById('sub').submit()
+    }
+</script>
 </body>
 </html>
 

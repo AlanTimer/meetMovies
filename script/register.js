@@ -118,6 +118,6 @@ function writeIntoDB() {
         url:"php/register_user.php",        //发送请求的地址
         data:"username="+username+'&password='+password+'&email='+email,              //传递数据
     });
-    document.getElementById("tips5").innerHTML = "<font color='green'size='1px'>注册成功</font>";
-    window.location.href="personalLabel.html";
+    // document.getElementById("tips5").innerHTML = "<font color='green'size='1px'>注册成功</font>";
+    window.location.href="login.php";
 }

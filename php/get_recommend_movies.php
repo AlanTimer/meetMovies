@@ -3,8 +3,8 @@
 header("Content-type:text/html;charset=utf-8"); //utf-8
 session_start();                    //开始 session
 require "config.php";
-//$user_Id=$_SESSION['user']['Id'];  //发送者的Id
-$user_Id = '1';                       //测试发送者的Id
+$user_Id=$_SESSION['user']['Id'];  //发送者的Id
+//$user_Id = '1';                       //测试发送者的Id
 $result = array();    //返回数组
 //连接数据库、选择数据库
 $pdo = new PDO(DB_DSN, DB_USER, DB_PWD);
@@ -16,11 +16,8 @@ $user = $res->fetch(PDO::FETCH_ASSOC);
 $tags=explode('/',$user['tag']);    //划分字符串
 
 $good_movies=get_command_movies_by_tags($pdo,$tags,5);
-//print_r($good_movies);
+
 echo json_encode($good_movies);
-exit();
-
-
 
 
 

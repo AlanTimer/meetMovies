@@ -5,11 +5,9 @@ require "php\config.php";
 $Id=$_SESSION['user']['Id'];
 $friends=array();
 try{
-    //连接数据库、选择数据库
-    $pdo = new PDO(DB_DSN,DB_USER,DB_PWD);
+    $pdo = new PDO(DB_DSN,DB_USER,DB_PWD);//连接数据库、选择数据库
 }catch(PDOException $e){
-    //输出异常信息
-    echo $e->getMessage();
+    echo $e->getMessage(); //输出异常信息
 }
 
 //friend表中查找id
@@ -30,5 +28,4 @@ foreach ($news_id as $k=>$user){
     }
 }
 
-//print_r(count($friends));
 include_once "add_friend.html";

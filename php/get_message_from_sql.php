@@ -2,11 +2,9 @@
 session_start();
 header("Content-type:text/html;charset=utf-8");
 require "config.php";
-//$from=$_SESSION['user']['Id'];                       //发送者的Id
+$from=$_POST['from'];
 $chat_to_id=$_POST['chat_to_id'];                   //接受者的Id
 $last_time=$_POST['last_time'];                   //时间戳
-$from='1';                       //发送者的Id
-
 //连接数据库
 $pdo = new PDO(DB_DSN,DB_USER,DB_PWD);
 $sql = "select * from chats where((from_id = '$from' && to_id = '$chat_to_id') ||

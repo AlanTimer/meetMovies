@@ -18,4 +18,23 @@ $res->bindParam(':user',$user);//绑定参数
 $res->bindParam(':friend',$friend);//绑定参数
 $res->execute();
 
+//    减少一个关注
+$sql = "select follows_num from user where Id = '$user'";
+$res = $pdo->prepare($sql);
+$res->execute();
+$row=$res->fetch();
+$now_num=$row['follows_num']-1;
+$sql = "update user set follows_num ='$now_num' where Id = '$user'";
+$res = $pdo->prepare($sql);
+$res->execute();
+
+//减少一个粉丝
+$sql = "select fans_num from user where Id = '$friend'";
+$res = $pdo->prepare($sql);
+$res->execute();
+$row=$res->fetch();
+$now_num=$row['fans_num']-1;
+$sql = "update user set fans_num ='$now_num' where Id = '$friend'";
+$res = $pdo->prepare($sql);
+$res->execute();
 
