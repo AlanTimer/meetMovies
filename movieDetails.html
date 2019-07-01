@@ -137,22 +137,37 @@
         <hr class="scoreDiv">
         <div class="score">
             <div class="totalScore">
-                豆瓣评分：<?php echo $data['score'] ?>
+                豆瓣评分：<span class="doubanScore"><?php echo $data['score'] ?></span>
             </div>
             <div class="fivestar">
-                5星：<?php echo $data['five-star'] ?>
+                <img class="scoreStar" src="images/star.png" alt="">
+                <img class="scoreStar" src="images/star.png" alt="">
+                <img class="scoreStar" src="images/star.png" alt="">
+                <img class="scoreStar" src="images/star.png" alt="">
+                <img class="scoreStar" src="images/star.png" alt="">
+                <div class="scoreText"><?php echo $data['five-star'] ?></div>
             </div>
             <div class="fourstar">
-                4星：<?php echo $data['four-star'] ?>
+                <img class="scoreStar" src="images/star.png" alt="">
+                <img class="scoreStar" src="images/star.png" alt="">
+                <img class="scoreStar" src="images/star.png" alt="">
+                <img class="scoreStar" src="images/star.png" alt="">
+                <div class="scoreText"><?php echo $data['four-star'] ?></div>
             </div>
             <div class="threestar">
-                3星：<?php echo $data['three-star'] ?>
+                <img class="scoreStar" src="images/star.png" alt="">
+                <img class="scoreStar" src="images/star.png" alt="">
+                <img class="scoreStar" src="images/star.png" alt="">
+                <div class="scoreText"><?php echo $data['three-star'] ?></div>
             </div>
             <div class="twostar">
-                2星：<?php echo $data['two-star'] ?>
+                <img class="scoreStar" src="images/star.png" alt="">
+                <img class="scoreStar" src="images/star.png" alt="">
+                <div class="scoreText"><?php echo $data['two-star'] ?></div>
             </div>
             <div class="onestar">
-                1星：<?php echo $data['one-star'] ?>
+                <img class="scoreStar" src="images/star.png" alt="">
+                <div class="scoreText"><?php echo $data['one-star'] ?></div>
             </div>
         </div>
         <div class="detailInfo">

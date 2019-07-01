@@ -49,7 +49,6 @@
     margin-left: 620px;
     margin-top: 95px;
 }
-
 .scoreDiv{
     position: absolute;
     width: 1px;
@@ -57,6 +56,20 @@
     margin-left: 610px;
     margin-top: 85px;
     color: #bbbbbb;
+}
+
+.doubanScore{
+    font-size: 30px;
+    color: #0d71bb;
+}
+
+.scoreStar{
+    width: 20px;
+    height: 20px;
+}
+
+.fivestar{
+    margin-top: 20px;
 }
 
 .detailInfo{
