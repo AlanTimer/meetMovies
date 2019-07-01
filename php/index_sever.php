@@ -1,7 +1,6 @@
 <?php
 //获得推荐电影
 header("Content-type:text/html;charset=utf-8"); //utf-8
-session_start();                    //开始 session
 require "config.php";
 $result = array();    //返回数组
 //连接数据库、选择数据库

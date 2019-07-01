@@ -1,5 +1,15 @@
-document.querySelector('.chat[data-chat=person1]').classList.add('active-chat');
-document.querySelector('.person[data-chat=person1]').classList.add('active');
+var persons=document.getElementsByClassName('person');
+console.log(persons);
+console.log(persons[0]);
+console.log(persons[0].getAttribute('data-chat'));
+var firstPerson=persons[0].getAttribute('data-chat');
+//'.chat[data-chat=person2]'
+var chat_selectors='.chat[data-chat='+firstPerson+']';
+var person_selectors='.person[data-chat='+firstPerson+']';
+// document.querySelector('.chat[data-chat=person2]').classList.add('active-chat');
+// document.querySelector('.person[data-chat=person2]').classList.add('active');
+document.querySelector(chat_selectors).classList.add('active-chat');
+document.querySelector(person_selectors).classList.add('active');
 
 var friends = {
   list: document.querySelector('ul.people'),

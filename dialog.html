@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Direct Messaging</title>
+<link href="css/css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/dialog_reset.min.css">
+<script type="text/javascript" src="script/jquery.js" ></script>
+<link rel="stylesheet" href="css/dialog_style.css">
+<link rel="stylesheet" type="text/css" href="css/main1.css" >
+    <script type="text/javascript" src="script/layer/layer.js"></script>
+<script>
+    function f() {
+        var div = document.getElementById('message-box');
+        div.scrollTop = div.scrollHeight;
+        //alert(document.body.scrollHeight);
+        document.body.scrollTop=document.body.scrollHeight;
+    }
+</script>
+</head>
+
+<body onload="f()" style="overflow-y: hidden">
+<div class="nav">
+    <div class="width_1200">
+        <ul>
+            <li><a href="main.html">主界面</a></li>
+            <li style="padding-left: 20px">
+                <form method="post" action="recommend_server.php" >
+                    <input type="text" name="word" placeholder="三千世界来搜一搜吧...">
+                    <button type="submit" class="search"></button>
+                </form>
+            </li>
+            <li style="padding-left: 10px"><a href="setup_friends.php">我的好友</a></li>
+            <li><a href="dialog.html">聊天室</a></li>
+
+        </ul>
+        <ol>
+            <li>
+                <a href="person_things_sever.php">
+                    <!--										<?php echo $user['username'] ?>-->
+                </a>
+            </li>
+
+            <li class="li_message">&nbsp;
+                <dl class="menu">
+                    <dd><a href="">@邀约</a></dd>
+                    <dd><a href="">我的消息</a></dd>
+                </dl>
+            </li>
+            <li class="li_set">&nbsp;
+                <dl class="menu">
+                    <dd><a href="">个人中心</a></dd>
+                    <dd><a href="">退出</a></dd>
+                </dl>
+            </li>
+        </ol>
+    </div>
+</div>
+  <div class="wrapper">
+    <div class="container"  >
+
+        <div class="right" >
+            <div class="top">
+                <span>To: <span class="name">Meet Movies!!!</span></span></div>
+            <div  id="message-box" class="chat active-chat" data-chat="person3" >
+
+            </div>
+
+
+
+            <div class="write" >
+                <a href="javascript:;" class="write-link attach"></a>
+                <input  id ="data" type="text">
+
+
+                <a  id="send"   class="write-link send"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <script>
+      (function () {
+          var socket = new WebSocket('ws://127.0.0.1:8008');
+         var send = document.getElementById('send');
+          var data = document.getElementById('data');
+          socket.onopen = function(event) {
+             layer.msg("connect success");
+          };
+          socket.onerror = function() {
+              layer.msg("connect error");
+          };
+          send.addEventListener('click', function() {
+              var content = data.value;
+              //alert(content);
+              if(content.length <= 0) {
+                  layer.msg('消息不能为空！');
+                  return false;
+              }
+              var id=" <?php session_start(); echo $_SESSION['user']['Id']?>";
+
+              data.value='';
+              var message ={'id':id,'content':content};
+              var json = JSON.stringify(message);
+              socket.send(json);
+          });
+          socket.onmessage = function(event) {
+              var messagebox = document.getElementById('message-box');
+              var div = document.createElement('div');
+              var id=" <?php session_start(); echo $_SESSION['user']['Id']; ?>";
+              // alert(id);
+
+              var jsonData = JSON.parse(event.data);
+              var revId=jsonData.id;
+              // if(revId!=id){
+              //     div.className="bubble you"
+              // }
+              // else{
+              //     alert("==");
+              //     div.className="bubble me"
+              // }
+              div.className="bubble me";
+
+              var reg = /(http:\/\/|https:\/\/)((\w|=|\?|\.|\/|&|-)+)/g;
+              if(reg.test(jsonData.content)){
+                  //div=div.replace(reg,"<a href='$1$2'>$1$2</a>");
+                  alert();
+                  var res=reg.exec(jsonData.content);
+                  alert('匹配到了' +res);
+              }
+              div.innerHTML = jsonData.content;
+
+
+              messagebox.appendChild(div);
+              f();
+          };
+
+
+
+      })();
+      function checkUrl(urlString){
+          if(urlString!=""){
+              var reg=/(http|ftp|https):\/\/[\w\-_]+(\.[\w\-_]+)+([\w\-\.,@?^=%&:/~\+#]*[\w\-\@?^=%&/~\+#])?/;
+              if(!reg.test(urlString)){
+                  alert("不是正确的网址吧，请注意检查一下");
+              }
+          }
+      }
+  </script>
+
+
+
+
+
+
+</body></html>

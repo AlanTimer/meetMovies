@@ -5,8 +5,48 @@
     <title>影友-电影搜索</title>
     <link rel="shortcut icon" href="images/logo.ico">
     <link rel="stylesheet" href="css/searchMovie.css">
+    <link rel="stylesheet" href="css/searchTitle.css">
+
 </head>
 <body>
+<!--    导航栏-->
+    <div class="nav">
+        <div class="width_1200">
+            <ul>
+                <li><a href="main.php">主界面</a></li>
+                <li style="padding-left: 20px">
+                    <form method="post" action="search_movies.php" >
+                        <input type="text" name="search_keyword" placeholder="三千世界来搜一搜吧...">
+                        <button type="submit" class="search"></button>
+                    </form>
+                </li>
+                <li style="padding-left: 10px"><a href="setup_friends.php">我的好友</a></li>
+                <li><a href="setup_chat.php">聊天室</a></li>
+
+            </ul>
+            <ol>
+                <li>
+                    <a href="person_things_sever.php">
+    <!--                    <?php echo $user['username'] ?>-->
+                    </a>
+                </li>
+
+                <li class="li_message">&nbsp;
+                    <dl class="menu">
+                        <dd><a href="">@邀约</a></dd>
+                        <dd><a href="">我的消息</a></dd>
+                    </dl>
+                </li>
+                <li class="li_set">&nbsp;
+                    <dl class="menu">
+                        <dd><a href="person_things_sever.php">个人中心</a></dd>
+                        <dd><a href="logout.php">退出</a></dd>
+                    </dl>
+                </li>
+            </ol>
+        </div>
+    </div>
+<!--    抬头-->
     <div class="big-title">
         <a href="main.php" title="影友">
             <img class="logo" src="images/logo.png">
@@ -126,6 +166,24 @@
                 简介：<?php echo $row['synopsis'] ?>
             </div>
             <hr class="movieDiv">
+        </div>
+        <?php } ?>
+    </div>
+
+    <div class="recList">
+        <p class="recBig">个性推荐</p>
+        <?php foreach($good_movies as $row){ ?>
+        <div class="recListmv">
+            <div class="recSingle">
+                <form method="post" action="movie_details.php" id="<?php echo $row['Id'] ?>1">
+                    <div>
+                        <img class="recPic" src="<?php echo $row['picture'] ?>" alt="影片海报"  onclick="demo_hhh(this)" id="<?php echo $row['Id'] ?>">
+                    </div>
+                    <div class="recTitle">
+                        <input value="<?php echo $row['name'] ?>" name="movie_name" class="recTitle" type="submit">
+                    </div>
+                </form>
+            </div>
         </div>
         <?php } ?>
     </div>

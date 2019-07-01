@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>聊天窗口界面</title>
+    <title>影友-聊天界面</title>
 
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
     <link rel="stylesheet" href="css/chat_interface_reset.min.css">
@@ -14,34 +14,34 @@
 <div class="nav">
     <div class="width_1200">
         <ul>
-            <li><a href="main.php">主界面</a></li>
+            <li><a href="main.html">主界面</a></li>
             <li style="padding-left: 20px">
-                <form method="post" action="search_movies.php" >
-                    <input type="text" name="search_keyword" placeholder="三千世界来搜一搜吧...">
+                <form method="post" action="recommend_server.php" >
+                    <input type="text" name="word" placeholder="三千世界来搜一搜吧...">
                     <button type="submit" class="search"></button>
                 </form>
             </li>
             <li style="padding-left: 10px"><a href="setup_friends.php">我的好友</a></li>
-            <li><a href="setup_chat.php">聊天室</a></li>
+            <li><a href="dialog.html">聊天室</a></li>
 
         </ul>
         <ol>
             <li>
                 <a href="person_things_sever.php">
-                    ?php echo $user['username'] ?>
+                    <!--										<?php echo $user['username'] ?>-->
                 </a>
             </li>
 
             <li class="li_message">&nbsp;
                 <dl class="menu">
-                    <dd><a href="setup_chat.php">我的消息</a></dd>
+                    <dd><a href="">@邀约</a></dd>
+                    <dd><a href="">我的消息</a></dd>
                 </dl>
             </li>
             <li class="li_set">&nbsp;
                 <dl class="menu">
-                    <dd><a href="person_things_sever.php">个人中心</a></dd>
-                    <dd><a href="personal_label_login.php">选择标签</a></dd>
-                    <dd><a href="logout.php">退出</a></dd>
+                    <dd><a href="">个人中心</a></dd>
+                    <dd><a href="">退出</a></dd>
                 </dl>
             </li>
         </ol>

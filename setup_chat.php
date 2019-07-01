@@ -3,7 +3,7 @@ header("Content-type:text/html;charset=utf-8"); //utf-8
 session_start();                    //开始 session
 require "php/config.php";
 
-$_SESSION['user']['Id']='2';
+$_SESSION['user']['Id']='4';
 
 $user_Id=$_SESSION['user']['Id'];  //发送者的Id
 date_default_timezone_set('Asia/Shanghai');//'Asia/Shanghai'   亚洲/上海

@@ -1,7 +1,7 @@
 <?php
 //获得推荐电影
 header("Content-type:text/html;charset=utf-8"); //utf-8
-//session_start();                    //开始 session
+session_start();                    //开始 session
 //require "config.php";
 $user_Id=$_SESSION['user']['Id'];  //发送者的Id
 //$user_Id = '1';                       //测试发送者的Id
@@ -15,7 +15,7 @@ $res->execute();
 $user = $res->fetch(PDO::FETCH_ASSOC);
 $tags=explode('/',$user['tag']);    //划分字符串
 
-$good_movies=get_command_movies_by_tags($pdo,$tags,5);
+$good_movies=get_command_movies_by_tags($pdo,$tags,4);
 
 
 

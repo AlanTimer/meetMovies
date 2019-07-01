@@ -13,8 +13,6 @@
 <script type="text/javascript" src="script/jquery-1.11.1.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/semantic.css" />
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
-	<link rel="Stylesheet" type="text/css" href="css/page.css"/>
-	<link rel="stylesheet" type="text/css" href="script/highslide/highslide.css" />
 <link href='http://fonts.useso.com/css?family=Roboto+Condensed:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
 <script src="script/responsiveslides.min.js"></script>
 <script>
@@ -69,7 +67,7 @@
 </div>
 
 <div class="container">
-		<div class="slider">
+    <div class="slider">
 	   <div class="callbacks_container">
 	      <ul class="rslides" id="slider">
 	        <li><img src="images/banner.jpg" class="img-responsive" alt=""/>
@@ -91,8 +89,8 @@
 	    </div>
 
       <div class="content">
-      	<div class="box_1">
-      	 <h1 class="m_2">推荐电影</h1>
+        	<div class="box_1">
+      	        <h1 class="m_2">推荐电影</h1>
 		</div>
 		<div class="box_2">
             <?php foreach($good_movies as $row){ ?>

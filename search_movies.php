@@ -40,4 +40,5 @@ $sql="select  * from movies where( name like '$movies_keyword'  || director like
 $result=$pdo->prepare($sql);
 $result->execute();
 $data=$result->fetchAll(PDO::FETCH_ASSOC);
+include_once 'php/get_recommend_movies.php';
 include_once 'searchMovie.html';

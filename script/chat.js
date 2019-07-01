@@ -19,7 +19,7 @@ function send_message() {
     div.scrollTop=div.scrollHeight;
     var to_id=chat[0].id.substring(4);
     var from_id=document.body.id;
-    alert(to_id);
+    // alert(to_id);
     $.ajax({
         type:"POST",
         data: 'from='+from_id+'&to='+to_id+'&message='+content+'&time='+newMsg.id,
@@ -41,11 +41,11 @@ function enter_send(e) {
     }
 
 }
-var int=self.setInterval("update_message()",4000);
+var int=self.setInterval("update_message()",2000);
 
 function update_message() {
     var from_id=document.body.id;
-    var send_time;
+    var send_time=null;
     var chat = document.getElementsByClassName('active-chat');
     current_div = chat[0];
     var to_id = current_div.id.substring(4);
@@ -81,11 +81,24 @@ function update_message() {
                         } else {
                             div.className = 'bubble me';
                         }
+                        var test_chat = document.getElementsByClassName('active-chat');
+                        test_current_div = chat[0];
+                        var test_childs=current_div.childNodes;
+
+                        for(var j=0;j<test_childs.length;j++){
+                            if(test_childs[j].id!=null){
+                                if(data[0]['send_time']==test_childs[j].id)
+                                    return;
+                            }
+                        }
+
                         div.innerHTML = data[i]['message'];
                         div.id = data[i]['send_time'];
+                        current_div.appendChild(div);
+
+
                         send_time = div.id;
                         console.log('new send_time   '+send_time);
-                        current_div.appendChild(div);
 
                     }
                     //send_time = data[data.length-1]['send_time'];

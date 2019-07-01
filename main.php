@@ -1,34 +1,31 @@
 <?php include_once 'php/main_sever.php' ?>
-
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Home</title>
-    <meta charset="UTF-8" name="referrer" content="never">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-    <link href="css/style1.css" rel="stylesheet" type="text/css" media="all" />
-    <!-- start plugins -->
-    <script type="text/javascript" src="script/jquery-1.11.1.min.js"></script>
+<title>影友-主页</title>
+<meta charset="UTF-8" name="referrer" content="never">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style1.css" rel="stylesheet" type="text/css" media="all" />
+<!-- start plugins -->
+<script type="text/javascript" src="script/jquery-1.11.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/semantic.css" >
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="Stylesheet" type="text/css" href="css/page.css">
-    <link rel="stylesheet" type="text/css" href="script/highslide/highslide.css" />
-    <link href='http://fonts.useso.com/css?family=Roboto+Condensed:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
-    <script src="script/responsiveslides.min.js"></script>
-    <script>
-        $(function () {
-          $("#slider").responsiveSlides({
-            auto: true,
-            nav: true,
-            speed: 500,
-            namespace: "callbacks",
-            pager: true,
-          });
-        });
-    </script>
+<link href='http://fonts.useso.com/css?family=Roboto+Condensed:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+<script src="script/responsiveslides.min.js"></script>
+<script>
+    $(function () {
+      $("#slider").responsiveSlides({
+        auto: true,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+        pager: true,
+      });
+    });
+</script>
 </head>
 <body>
 <!--导航-->
@@ -61,7 +58,7 @@
 			<li class="li_set">&nbsp;
 				<dl class="menu">
 					<dd><a href="person_things_sever.php">个人中心</a></dd>
-					<dd><a href="personal_label_login.php">选择标签</a></dd>
+					<dd><a href="personal_label_login_sever.php">选择标签</a></dd>
 					<dd><a href="logout.php">退出</a></dd>
 				</dl>
 			</li>

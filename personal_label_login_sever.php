@@ -16,5 +16,5 @@ $res->execute();
 $user= $res->fetch(PDO::FETCH_ASSOC);  //返回一个索引为结果集列名的数组
 $_SESSION['user']=$user;
 
-include_once 'person_things.php';
+include_once 'personal_label_login.php';
 //include_once 'personal_label_login_sever.php';

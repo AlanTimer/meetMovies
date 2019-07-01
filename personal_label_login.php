@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>个人信息</title>
+    <title>影友-个性标签</title>
     <link rel="stylesheet" type="text/css" href="css/semantic.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="Stylesheet" type="text/css" href="css/page.css"/>
@@ -51,7 +51,7 @@
             <li class="li_set">&nbsp;
                 <dl class="menu">
                     <dd><a href="person_things_sever.php">个人中心</a></dd>
-                    <dd><a href="personal_label_login.php">选择标签</a></dd>
+                    <dd><a href="personal_label_login_sever.php">选择标签</a></dd>
                     <dd><a href="logout.php">退出</a></dd>
                 </dl>
             </li>
