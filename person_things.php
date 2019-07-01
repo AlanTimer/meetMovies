@@ -30,13 +30,13 @@
                 </form>
             </li>
             <li style="padding-left: 10px"><a href="setup_friends.php">我的好友</a></li>
-            <li><a href="setup_chat.php">聊天室</a></li>
+            <li><a href="dialog.html">树洞聊天室</a></li>
 
         </ul>
         <ol>
             <li>
                 <a href="person_things_sever.php">
-                    <?php echo $user['username'] ?>
+                    <?php echo $_SESSION['user']['username'] ?>
                 </a>
             </li>
 

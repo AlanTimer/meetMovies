@@ -29,6 +29,13 @@ else{
     $_SESSION['movies_keyword']="";//电影名称为空,适配全部
     $_SESSION['order_type']="score";//排序类型默认为分数
 }
+
+if(!isset($_SESSION['movies_type']))
+    $_SESSION['movies_type']="";
+if(!isset($_SESSION['movies_keyword']))
+    $_SESSION['movies_keyword']="";
+if(!isset($_SESSION['order_type']))
+    $_SESSION['order_type']="score";
 //读取数据
 $movies_type='%'.$_SESSION['movies_type'].'%';
 $movies_keyword='%'.$_SESSION['movies_keyword'].'%';
