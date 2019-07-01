@@ -1,0 +1,89 @@
+/*body {*/
+/*    width:100%;*/
+/*    background-image: url("../images/login_bg.png");*/
+/*    background-repeat: no-repeat;*/
+/*}*/
+
+.demo-logo img{
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translate(0,-50%);
+    margin-left: -190px;
+    width: 400px;
+}
+
+.demo{
+    position: absolute;
+    top: 600px;
+    left: 40%;
+    transform: translate(0, -50%);
+    width: 400px;
+    height: 360px;
+    padding: 10px 5px;
+    margin-left: -200px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    background: transparent;
+}
+
+.demo-title{
+    font-size: 24px;
+    color: #34495e;
+    font-family: 幼圆;
+    margin: 10px 10px 10px 60px;
+}
+
+.labelDiv{
+    margin: 15px 5px 10px 25px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li1{
+    cursor: pointer;
+    margin: 8px 5px 8px 5px;
+    float: left;
+    background-color: #FC9;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 30px;
+    text-align: center;
+    width: 60px;
+    height: 30px;
+    color: #000000;
+}
+
+li:hover{
+    background-color: #F93;
+}
+
+.ok-btn{
+    margin: 15px 40px 10px 40px;
+    background-color: #FC9;
+    color: aliceblue;
+    text-align: center;
+    width: 80%;
+    height: 44px;
+    border-radius:8px;
+    font-size: 24px;
+}
+
+.skip{
+    color: #444;
+    font-size: 14px;
+    text-decoration: underline;
+    position: absolute;
+    top: 93%;
+    left: 88%;
+    cursor: pointer;
+}
+
+.skip:hover{
+    color: #0d71bb;
+}

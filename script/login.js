@@ -1,5 +1,5 @@
 function checkUserName() {
-    //  window.location.href="main.html";
+    //  window.location.href="main.php";
     //document.getElementById("hidden_info1").innerHTML = "<font color='red'size='1px'>邮箱名不能为空</font>";
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
@@ -22,7 +22,7 @@ function checkUserName() {
                 //     url:"php/seven_day_free_verification.php",            //发送请求的地址
                 //     data:"username="+username,     //传递数据
                 // })
-                window.location.href="main.html";
+                window.location.href="main.php";
 
             }else{
                 window.location.href="personal_label.php";

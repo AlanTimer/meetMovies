@@ -11,7 +11,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Movie Friends</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/logo_half.png" />
-
+    <link rel="stylesheet" type="text/css" href="css/main1.css" />
     <link rel="stylesheet" type="text/css" href="css/base.css" />
 
     <script type="text/javascript">
@@ -80,35 +80,46 @@
         </div>
         <div id="nxHeader" class="hd-wraper ">
             <div class="hd-fixed-wraper clearfix">
-                <div class="hd-main">
-                    <h1 class="hd-logo" style="width:125px;height:50px">
-                        <!--待替换logo和连接--> <a href="" title="约好友一起看电影">人人网</a> </h1>
-                    <div class="hd-nav clearfix">
-                        <dl class="hd-account clearfix">
-                            <dt>
-                                <a href=""> <img class="hd-avatar" width="30" height="30" src="friend_files/h_tiny_zXV1_51d700014cf91986.jpg" alt="郝佳慧 Jewel" /> </a>
-                            </dt>
-                            <dd>
-                                <a class="hd-name" href="">小明 ..</a>
+<!--                <div class="hd-main">-->
+                    <div class="nav">
+                        <div class="width_1200">
+                            <ul>
+                                <li><a href="main.php">主界面</a></li>
+                                <li style="padding-left: 20px">
+                                    <form method="post" action="search_movies.php" >
+                                        <input type="text" name="search_keyword" placeholder="三千世界来搜一搜吧...">
+                                        <button type="submit" class="search"></button>
+                                    </form>
+                                </li>
+                                <li style="padding-left: 10px"><a href="setup_friends.php">我的好友</a></li>
+                                <li><a href="setup_chat.php">聊天室</a></li>
 
-                            </dd>
-                        </dl>
-                        <div class="hd-account-action">
-                            <a href="" class="account-more"><span class="ui-icon ui-icon-setting ui-iconfont"></span></a>
-                            <div class="nx-drop-box nx-simple-drop nx-account-drop">
-                                <ul class="nv-account-ctrl clearfix">
-                                    <li class="nv-drop-privacy "><a href=""><span class="ui-icon ui-icon-lock ui-iconfont"></span>隐私设置</a></li>
-                                    <li class="nv-drop-setting"><a href=""><span class="ui-icon ui-icon-privacysetting ui-iconfont"></span>个人设置</a></li>
-                                    <li class="nv-drop-pay"><a href=""><span class="ui-icon ui-icon-pay"></span>充值中心</a></li>
-                                    <li class="nv-account-sline"></li>
-                                    <li class="nv-drop-guide"><a href=""><span class="ui-icon ui-icon-guide ui-iconfont"></span>新版指南</a></li>
-                                    <li class="nv-drop-contact"><a href=""><span class="ui-icon ui-icon-customerservice ui-iconfont"></span>联系客服</a></li>
-                                    <li class="nv-drop-exit"><a href=""><span class="ui-icon ui-icon-out ui-iconfont"></span>退出</a></li>
-                                </ul>
-                            </div>
+                            </ul>
+                            <ol>
+                                <li>
+                                    <a href="person_things_sever.php">
+                                        <?php echo $user['username'] ?>
+                                    </a>
+                                </li>
+
+                                <li class="li_message">&nbsp;
+                                    <dl class="menu">
+                                        <dd><a href="setup_chat.php">我的消息</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="li_set">&nbsp;
+                                    <dl class="menu">
+                                        <dd><a href="person_things_sever.php">个人中心</a></dd>
+                                        <dd><a href="personal_label_login.php">选择标签</a></dd>
+                                        <dd><a href="logout.php">退出</a></dd>
+                                    </dl>
+                                </li>
+                            </ol>
                         </div>
-
                     </div>
+
+
+<!--                    </div>-->
                 </div>
             </div>
         </div>
@@ -116,17 +127,7 @@
         </div>
         <div class="bd-container ">
             <div class="frame-nav-wrap">
-                <div id="frameFixedNav" class="frame-nav-fixed-wraper" style="width: 100%;postion:absolute;top:50px;left:0">
-                    <div class="frame-nav-inner">
-                        <ul class="fd-nav-list clearfix">
-                            <li class="fd-nav-item"> <span class="fd-nav-icon fd-sub-nav"></span> <a href="">主页</a> </li>
-                            <li class="fd-nav-item"> <a href="">个性化</a> </li>
-                            <li class="fd-nav-item"> <a href="">日志</a> </li>
-                            <li class="fd-nav-item fd-nav-cur-item"> <a href="">好友</a> </li>
-
-                        </ul>
-                    </div>
-                </div>
+            </div>
             </div>
             <script type="text/javascript">
                 (function(){
@@ -138,7 +139,7 @@
             </script>
             <div class="bd-main">
                 <div class="bd-content clearfix">
-                    <div id="friends-box" style="margin-right: 10px ;margin-left: 10px">
+                    <div id="friends-box" style="margin-right: 10px ;margin-left: 150px">
                         <div id="friend_head_bar">
                             <div id="friend_head_bar_bg" style=""></div>
                             <ul class="friend-manage-list">
@@ -274,45 +275,36 @@
                                 </div>
                             </div>
                             <div id="friends_groups">
+                                <div class="friends-groups-top clearfix" id="group-container">
+                                    <div class="group-list">
+                                        <ul id="groups-list-con">
+                                            <li data-name="全部好友" class="group  on"> <a class="all"  data-name="全部好友" href="javascript:;"> <span class="gname">全部好友</span><span class="group-num">313</span> </a> </li>
+                                            <li data-name="未分组好友" class="group"> <a class="nogroup"  data-name="未分组好友" href="javascript:;"> <span class="gname">未分组好友</span><span class="group-num">22</span> </a> </li>
+                                            <li data-name="特别好友" class="group"> <a class="special"  data-name="特别好友" href="javascript:;"> <span class="gname">特别好友</span><span class="group-num">0</span> </a> </li>
+                                            <li data-name="最近添加好友" class="group"> <a class="latest"  data-name="最近添加好友" href="javascript:;"> <span class="gname">最近添加好友</span><span class="group-num">10</span> </a> </li>
+                                            <li data-name="分组一" class="group normal-group"> <a class="normal" title="十堰一中圈" data-name="十堰一中圈" href="javascript:;"> <span class="gname">分组一</span><span class="group-num">72</span> </a> </li>
+                                            <li data-name="武汉理工圈1" class="group normal-group"> <a class="normal"  data-name="武汉理工圈1" href="javascript:;"> <span class="gname">分组二</span><span class="group-num">140</span> </a> </li>
+                                            <li data-name="武汉理工圈2" class="group normal-group"> <a class="normal" data-name="武汉理工圈2" href="javascript:;"> <span class="gname">分组三</span><span class="group-num">57</span> </a> </li>
+                                            <li data-name="武汉理工圈3" class="group normal-group"> <a class="normal"  data-name="武汉理工圈3" href="javascript:;"> <span class="gname">分组四</span><span class="group-num">22</span> </a> </li>
+                                            <li> <a href="javascript:;" title="新建分组" class="add png">新建分组</a>
+                                                <div class="new-group " style="display:none;">
+                                                    <input class="new-group-name name-num-overflow" />
+                                                    <span class="new-name-ok">确认</span>
+                                                    <span class="new-name-cancel">取消</span>
+                                                </div> </li>
 
-                                <!-- 推荐加入分组/可能认识的人-->
-                                <div class="group-suggest suggest-container" id="group_suggest">
-                                    <h3 class="suggest-title fl">电影邀约</h3>
-                                    <div class="suggest-func fr clearfix">
-                                        <a class="png suggest-prev fl no_left">向前</a>
-                                        <a class="png suggest-next fl ">向后</a>
-                                        <a class="png suggest-more fl" href=""></a>
+                                            <li><a class="more png" id="moregroups" style="display:none;" href="javascript:;"></a></li>
+                                        </ul>
                                     </div>
-                                    <ul class="suggest-friends-list clearfix" id="suggest-list-con">
-                                        <li class="suggest-friend fl">
-                                            <a class="suggest-userhead" href="" target="_blank"> <img class="suggest-head" src="friend_files/h_main_3qpW_7c6e000006c7111a.jpg" onload="photoAdjust(this, 100, 100)" width="100" height="100" style="overflow: hidden; display: inline; visibility: visible;" />
-                                            <div class="head-mask"></div>
-                                            </a>
-                                            <a class="suggest-name" href="" target="_blank">小黑</a> <a class="suggest_follow ui-button ui-button-green suggest-add fr" data-id="382690916" data-name="陆浩川" data-flag="0">
-                                            <i class="ui-icon ui-iconfont" ></i>一键邀约</a> </li>
-                                        <li class="suggest-friend fl"> <a class="suggest-userhead" href="" target="_blank"> <img class="suggest-head" src="friend_files/h_main_U2VC_563a00043e612f76.jpg" onload="photoAdjust(this, 100, 100)" width="100" height="100" style="overflow: hidden; display: inline; visibility: visible;" />
-                                            <div class="head-mask"></div> </a> <a class="suggest-name" href="" target="_blank">小刚</a> <a class="suggest_follow ui-button ui-button-green suggest-add fr" data-id="442280619" data-name="佘文浩" data-flag="0"><i class="ui-icon ui-iconfont" ></i>一键邀约</a> </li>
-                                        <li class="suggest-friend fl"> <a class="suggest-userhead" href="" target="_blank"> <img class="suggest-head" src="friend_files/h_main_ptKe_e0f900061eac195a.jpg" onload="photoAdjust(this, 100, 100)" width="100" height="100" style="overflow: hidden; display: inline; visibility: visible;" />
-                                            <div class="head-mask"></div> </a> <a class="suggest-name" href="" target="_blank">小美</a> <a class="suggest_follow ui-button ui-button-green suggest-add fr" data-id="350433133" data-name="李琪" data-flag="0"><i class="ui-icon ui-iconfont" ></i>一键邀约</a> </li>
-                                        <li class="suggest-friend fl"> <a class="suggest-userhead" href="" target="_blank"> <img class="suggest-head" src="friend_files/h_main_fTW9_56330004421e2f76.jpg" onload="photoAdjust(this, 100, 100)" width="100" height="100" style="overflow: hidden; display: inline; visibility: visible;" />
-                                            <div class="head-mask"></div> </a> <a class="suggest-name" href="" target="_blank">小华</a> <a class="suggest_follow ui-button ui-button-green suggest-add fr" data-id="420502269" data-name="肖涛" data-flag="0"> <i class="ui-icon ui-iconfont" ></i>一键邀约</a> </li>
-                                        <li class="suggest-friend fl"> <a class="suggest-userhead" href="" target="_blank"> <img class="suggest-head" src="friend_files/h_main_BmN6_2137000000031375.jpg" onload="photoAdjust(this, 100, 100)" width="128" height="100" style="overflow: hidden; display: inline; visibility: visible;" />
-                                            <div class="head-mask"></div> </a> <a class="suggest-name" href="" target="_blank">刘艳丽</a> <a class="suggest_follow ui-button ui-button-green suggest-add fr" data-id="462329648" data-name="刘艳丽" data-flag="0"><i class="ui-icon ui-iconfont" ></i>一键邀约</a> </li>
-                                        <li class="suggest-friend fl"> <a class="suggest-userhead" href="" target="_blank"> <img class="suggest-head" src="friend_files/h_main_WqUm_b63f000004f6113e.jpg" onload="photoAdjust(this, 100, 100)" width="151" height="100" style="overflow: hidden; display: inline; visibility: visible;" />
-                                            <div class="head-mask"></div> </a> <a class="suggest-name" href="" target="_blank">梅兰</a> <a class="suggest_follow ui-button ui-button-green suggest-add fr" data-id="308181246" data-name="梅兰" data-flag="0"><i class="ui-icon ui-iconfont" ></i>一键邀约</a> </li>
-                                        <li class="suggest-friend fl"> <a class="suggest-userhead" href="" target="_blank"> <img class="suggest-head" src="friend_files/h_main_VTwM_d85b00000f08113e.jpg" onload="photoAdjust(this, 100, 100)" width="100" height="100" style="overflow: hidden; display: inline; visibility: visible;" />
-                                            <div class="head-mask"></div> </a> <a class="suggest-name" href="" target="_blank">李旭</a> <a class="suggest_follow ui-button ui-button-green suggest-add fr" data-id="309070982" data-name="李旭" data-flag="0"><i class="ui-icon ui-iconfont" ></i>一键邀约</a> </li>
-                                        <li class="suggest-friend fl"> <a class="suggest-userhead" href="" target="_blank"> <img class="suggest-head" src="friend_files/h_main_2NsV_b5ee00000191113e.jpg" onload="photoAdjust(this, 100, 100)" width="100" height="133" style="overflow: hidden; display: inline; visibility: visible;" />
-                                            <div class="head-mask"></div> </a> <a class="suggest-name" href="" target="_blank">刘雪梅</a> <a class="suggest_follow ui-button ui-button-green suggest-add fr" data-id="461969084" data-name="刘雪梅" data-flag="0"><i class="ui-icon ui-iconfont" ></i>一键邀约</a> </li>
-                                        <li class="suggest-friend fl"> <a class="suggest-userhead" href="" target="_blank"> <img class="suggest-head" src="friend_files/h_main_UPqB_fd9c00014cfe195a.jpg" onload="photoAdjust(this, 100, 100)" width="100" height="100" style="overflow: hidden; display: inline; visibility: visible;" />
-                                            <div class="head-mask"></div> </a> <a class="suggest-name" href="" target="_blank">易茗琪</a> <a class="suggest_follow ui-button ui-button-green suggest-add fr" data-id="343471370" data-name="易茗琪" data-flag="0"><i class="ui-icon ui-iconfont" ></i>关注好友</a> </li>
-                                    </ul>
                                 </div>
+
                                 <div class="advert-box side-item">
                                 </div>
                                 <div class="advert-box2 side-item" style="padding-top: 30px;clear: both;">
                                 </div>
                             </div>
+
+
                         </div>
                     </div>
 
@@ -357,24 +349,7 @@
     <div id="webpager" style="" class="fold">
         <a href="javascript:;" class="wp_fold_webpager png" style="display: none;"></a>
         <div class="wp_top_bubbles"></div>
-        <div class="wp_top_tabs">
-            <div class="wp_top_tab fold png  foldstyle" data-tab="fold">
-                <span class="sn">4</span>
-            </div>
-            <div class="wp_top_tab notify png wp-none" data-tab="notify">
-                <span class="title">通知</span>
-            </div>
-            <div class="wp_top_tab friends png wp-none left" data-tab="friends">
-                <span class="wp_top_tab_friends sn hide">0</span>
-                <span class="title">好友</span>
-                <span class="on_sn" style="display:none">0</span>
-            </div>
-            <div class="wp_top_tab recent png wp-none on" data-tab="recent">
-                <span class="wp_top_tab_recent sn">4</span>
-                <span class="title">会话</span>
-                <span class="on_sn" style="display:none">4</span>
-            </div>
-        </div>
+
         <div id="buddy" class="wp-none">
             <div id="notifyTab" class="wp_tab notify">
                 <div class="wp_collector status" style="display:none;"></div>
@@ -602,7 +577,7 @@
             </div>
         </div>
     </div>
-    <div class="vip-skinBtn"></div>
+
 </div>
 <div id="popup-window-wrap" class="popup-window-wrap" style="right: 0px;">
 

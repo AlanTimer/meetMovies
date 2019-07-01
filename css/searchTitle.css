@@ -2,20 +2,10 @@
     margin: 0px;
     padding: 0px;
 }
-html ,body {
-    font: 16px "microsoft yahei", Helvetica, Tahoma, Arial, "Microsoft jhengHei", sans-serif;
-
-    color:#111;
-}
 ol,ul {
     list-style:none;
 }
-body {
-    background-color:#d4e8fe;
-    background-image: url("../images/body_bg.png");
-    background-repeat: no-repeat;
-    background-position: center 35px;
-}
+
 .width_1000{
     width: 1000px;
     margin: 0 auto;
@@ -27,6 +17,7 @@ body {
 a{
     color: #666666;
     cursor: pointer;
+    text-decoration: none;
 }
 .fl{
     float: left;
@@ -78,7 +69,7 @@ a{
 .nav ul li button{
     float: left;
     width: 35px;
-    height: 34px;
+    height: 32px;
     border: 1px solid #e5e5e5;
     background:url("../images/search_btn.png") center 50% no-repeat;
     outline: none;
@@ -104,7 +95,7 @@ a{
     z-index: 999;
     border: 0px solid #ccc;
     box-shadow: 0px 2px 8px 1px rgba(0,0,0,0);
-   max-height: 0px;
+    max-height: 0px;
 }
 .nav ol .menu a{
     display: block;
@@ -571,31 +562,7 @@ a{
     margin-bottom: 10px ;
     overflow: hidden;
 }
-.rec{
-    float: left;
-    margin-top: 40px;
-    margin-left: 40px;
-}
-.recPic {
-    width: 129px;
-    height: 180px;
-}
-.recPic:hover{
-    cursor: pointer;
-}
-.recTitle{
-    background-color: transparent;
-    border: none;
-    outline: none;
-    width: 140px;
-    height: 30px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.recTitle:hover{
-    cursor: pointer;
-    color: #0d71bb;
+.conten-bottom {
 }
 .post-time {
     float: left;
@@ -617,7 +584,7 @@ a{
     border-bottom: 1px solid #e5e5e5;
 }
 
-/*qq表情*/
+/*qq琛ㄦ儏*/
 .qqFace {
     margin-top:4px;
     background:#fff;
@@ -722,7 +689,7 @@ a{
 .ui.attached.segment_new {
     border: 0px solid #d4d4d5;
 }
-/*@好友*/
+/*@濂藉弸*/
 .interest-link {
     width: 222px;
     overflow: hidden;
@@ -781,7 +748,7 @@ a{
     width:100%;padding:20px 26px;background-color: #fff;overflow: hidden;
     margin-bottom: 40px;
 }
-/*个人主页*/
+/*涓汉涓婚〉*/
 .main-box {
     width: 650px;
     height: 180px;
@@ -871,7 +838,7 @@ a{
 }
 
 
-/**********微博上传样式***********/
+/**********寰崥涓婁紶鏍峰紡***********/
 .photo_upload_box_outside{position: absolute;left:0;top:0;z-index: 800;padding-bottom: 12px; display: none;border: 1px solid #ccc; border-radius: 3px;background-color: #FFF; box-shadow: 0 4px 20px 1px rgba(0, 0, 0, 0.2);}
 .photo_upload_box{padding: 16px 0 10px 16px; width: 308px; position: relative}
 .photo_upload_box h1{font-size: 14px;font-weight: 700;}

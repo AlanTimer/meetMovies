@@ -64,7 +64,7 @@
         <!-- 跳过，暂时不选标签-->
         <div>
             <!-- 直接跳转到主界面-->
-            <a class="skip" id="skip" href="main.html">跳过</a>
+            <a class="skip" id="skip" href="main.php">跳过</a>
         </div>
     </div>
 </body>

@@ -1,7 +1,6 @@
 <?php
 require "config.php";
-//$Id=$_SESSION['user']['Id'];
-$Id=1;
+$Id=$_SESSION['user']['Id'];
 $now_tag=$_POST['tag'];
 //$now_tag="喜剧/悲剧";
 try{

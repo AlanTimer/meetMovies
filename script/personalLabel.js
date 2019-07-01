@@ -43,5 +43,5 @@ function writeLabel() {
         url:"php/reset_user_tag.php",   //发送请求的地址
         data:"tag="+tag,                //传递数据
     });
-    window.location.href="main.html";
+    window.location.href="main.php";
 }

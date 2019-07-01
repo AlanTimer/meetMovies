@@ -6,9 +6,12 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>Movie Friends</title>
 	<link rel="shortcut icon" type="image/x-icon" href="images/logo_half.png" />
-	<link rel="stylesheet" type="text/css" href="css/semantic.css" />
-	<link rel="stylesheet" type="text/css" href="css/main.css" />
+
 	<link rel="stylesheet" type="text/css" href="css/base.css" />
+<!--	<link rel="stylesheet" type="text/css" href="css/semantic.css" />-->
+	<link rel="stylesheet" type="text/css" href="css/main1.css" />
+<!--	<link rel="Stylesheet" type="text/css" href="css/page.css"/>-->
+<!--	<link rel="stylesheet" type="text/css" href="css/highslide.css" />-->
 
 	<script type="text/javascript">
 		if(typeof nx === 'undefined'){
@@ -31,6 +34,9 @@
 		nx.webpager = nx.webpager || {};
 		nx.production = true;
 	</script>
+
+
+
 	<!--[if lt IE 9]>
 	<script type="text/javascript">
 		document.execCommand("BackgroundImageCache", false, true);
@@ -59,45 +65,6 @@
 	<link href="css/advert.css" rel="stylesheet" class="lazyload" charset="utf-8" />
 </head>
 <body>
-<!--导航-->
-<div class="nav">
-	<div class="width_1200">
-		<ul>
-			<li><a href="main.html">主界面</a></li>
-			<li style="padding-left: 20px">
-				<form method="post" action="search_movies.php" >
-					<input type="text" name="search_keyword" placeholder="三千世界来搜一搜吧...">
-					<button type="submit" class="search"></button>
-				</form>
-			</li>
-			<li style="padding-left: 10px"><a href="setup_friends.php">我的好友</a></li>
-			<li><a href="setup_chat.php">聊天室</a></li>
-
-		</ul>
-		<ol>
-			<li>
-				<a href="person_things_sever.php">
-					<?php echo $user['username'] ?>
-				</a>
-			</li>
-
-			<li class="li_message">&nbsp;
-				<dl class="menu">
-					<dd><a href="">@邀约</a></dd>
-					<dd><a href="">我的消息</a></dd>
-				</dl>
-			</li>
-			<li class="li_set">&nbsp;
-				<dl class="menu">
-					<dd><a href="person_things_sever.php">个人中心</a></dd>
-					<dd><a href="logout.php">退出</a></dd>
-				</dl>
-			</li>
-		</ol>
-	</div>
-</div>
-
-
 <div id="BAIDU_DUP_fp_wrapper" style="position: absolute; left: -1px; bottom: -1px; z-index: 0; width: 0px; height: 0px; overflow: hidden; visibility: hidden; display: none;">
 	<iframe id="BAIDU_DUP_fp_iframe" src="" style="width: 0px; height: 0px; visibility: hidden; display: none;"></iframe>
 </div>
@@ -113,53 +80,66 @@
 		</div>
 		<div id="nxHeader" class="hd-wraper ">
 			<div class="hd-fixed-wraper clearfix">
-				<div class="hd-main">
-					<h1 class="hd-logo" style="width:125px;height:50px">
-						<!--待替换logo和连接--> <a href="" title="约好友一起看电影">人人网</a> </h1>
-					<div class="hd-nav clearfix">
-						<dl class="hd-account clearfix">
-							<dt>
-								<a href=""> <img class="hd-avatar" width="30" height="30" src="friend_files/h_tiny_zXV1_51d700014cf91986.jpg" alt="郝佳慧 Jewel" /> </a>
-							</dt>
-							<dd>
-								<a class="hd-name" href="" title="Movie Friends">小明 ..</a>
+<!--				<div class="hd-main">-->
+<!--					<h1 class="hd-logo" style="width:125px;height:50px">-->
 
-							</dd>
-						</dl>
-						<div class="hd-account-action">
-							<a href="" class="account-more"><span class="ui-icon ui-icon-setting ui-iconfont"></span></a>
-							<div class="nx-drop-box nx-simple-drop nx-account-drop">
-								<ul class="nv-account-ctrl clearfix">
-									<li class="nv-drop-privacy "><a href=""><span class="ui-icon ui-icon-lock ui-iconfont"></span>隐私设置</a></li>
-									<li class="nv-drop-setting"><a href=""><span class="ui-icon ui-icon-privacysetting ui-iconfont"></span>个人设置</a></li>
-									<li class="nv-drop-pay"><a href=""><span class="ui-icon ui-icon-pay"></span>充值中心</a></li>
-									<li class="nv-account-sline"></li>
-									<li class="nv-drop-guide"><a href=""><span class="ui-icon ui-icon-guide ui-iconfont"></span>新版指南</a></li>
-									<li class="nv-drop-contact"><a href=""><span class="ui-icon ui-icon-customerservice ui-iconfont"></span>联系客服</a></li>
-									<li class="nv-drop-exit"><a href=""><span class="ui-icon ui-icon-out ui-iconfont"></span>退出</a></li>
-								</ul>
-							</div>
+						<!--待替换logo和连接-->
+<!--					<a href="" title="约好友一起看电影">人人网</a> </h1>-->
+					<div class="nav">
+						<div class="width_1200">
+							<ul>
+								<li><a href="main.php">主界面</a></li>
+								<li style="padding-left: 20px">
+									<form method="post" action="search_movies.php" >
+										<input type="text" name="search_keyword" placeholder="三千世界来搜一搜吧...">
+										<button type="submit" class="search"></button>
+									</form>
+								</li>
+								<li style="padding-left: 10px"><a href="setup_friends.php">我的好友</a></li>
+								<li><a href="setup_chat.php">聊天室</a></li>
+
+							</ul>
+							<ol>
+								<li>
+									<a href="person_things_sever.php">
+										<?php echo $user['username'] ?>
+									</a>
+								</li>
+
+								<li class="li_message">&nbsp;
+									<dl class="menu">
+										<dd><a href="setup_chat.php">我的消息</a></dd>
+									</dl>
+								</li>
+								<li class="li_set">&nbsp;
+									<dl class="menu">
+										<dd><a href="person_things_sever.php">个人中心</a></dd>
+										<dd><a href="personal_label_login.php">选择标签</a></dd>
+										<dd><a href="logout.php">退出</a></dd>
+									</dl>
+								</li>
+							</ol>
 						</div>
-
 					</div>
-				</div>
+
+<!--				</div>-->
 			</div>
 		</div>
 		<div class="nx-wraper clearfix">
 		</div>
 		<div class="bd-container ">
 			<div class="frame-nav-wrap">
-				<div id="frameFixedNav" class="frame-nav-fixed-wraper" style="width: 100%;postion:absolute;top:50px;left:0">
-					<div class="frame-nav-inner">
-						<ul class="fd-nav-list clearfix">
-							<li class="fd-nav-item"> <span class="fd-nav-icon fd-sub-nav"></span> <a href="">主页</a> </li>
-							<li class="fd-nav-item"> <a href="">个性化</a> </li>
-							<li class="fd-nav-item"> <a href="">日志</a> </li>
-							<li class="fd-nav-item fd-nav-cur-item"> <a href="">好友</a> </li>
+<!--				<div id="frameFixedNav" class="frame-nav-fixed-wraper" style="width: 100%;postion:absolute;top:50px;left:0">-->
+<!--					<div class="frame-nav-inner">-->
+<!--						<ul class="fd-nav-list clearfix">-->
+<!--							<li class="fd-nav-item"> <span class="fd-nav-icon fd-sub-nav"></span> <a href="">主页</a> </li>-->
+<!--							<li class="fd-nav-item"> <a href="">个性化</a> </li>-->
+<!--							<li class="fd-nav-item"> <a href="">日志</a> </li>-->
+<!--							<li class="fd-nav-item fd-nav-cur-item"> <a href="">好友</a> </li>-->
 
-						</ul>
-					</div>
-				</div>
+<!--						</ul>-->
+<!--					</div>-->
+<!--				</div>-->
 			</div>
 			<script type="text/javascript">
 				(function(){
@@ -337,13 +317,13 @@
 										<a class="png suggest-more fl" href=""></a>
 									</div>
 									<ul class="suggest-friends-list clearfix" id="suggest-list-con">
-										<li class="suggest-friend fl"> <a class="suggest-userhead" href="" target="_blank"> <img class="suggest-head" src="friend_files/h_main_3qpW_7c6e000006c7111a.jpg" onload="photoAdjust(this, 100, 100)" width="100" height="100" style="overflow: hidden; display: inline; visibility: visible;" />
+										<li class="suggest-friend fl"> <a class="suggest-userhead" href="" target="_blank"> <img class="suggest-head" src="images/h_main_3qpW_7c6e000006c7111a.jpg" onload="photoAdjust(this, 100, 100)" width="100" height="100" style="overflow: hidden; display: inline; visibility: visible;" />
 											<div class="head-mask"></div> </a> <a class="suggest-name" href="" target="_blank">小黑</a> <a class="suggest_follow ui-button ui-button-green suggest-add fr" data-id="382690916" data-name="陆浩川" data-flag="0"><i class="ui-icon ui-iconfont" ></i>一键邀约</a> </li>
-										<li class="suggest-friend fl"> <a class="suggest-userhead" href="" target="_blank"> <img class="suggest-head" src="friend_files/h_main_U2VC_563a00043e612f76.jpg" onload="photoAdjust(this, 100, 100)" width="100" height="100" style="overflow: hidden; display: inline; visibility: visible;" />
+										<li class="suggest-friend fl"> <a class="suggest-userhead" href="" target="_blank"> <img class="suggest-head" src="images/h_main_U2VC_563a00043e612f76.jpg" onload="photoAdjust(this, 100, 100)" width="100" height="100" style="overflow: hidden; display: inline; visibility: visible;" />
 											<div class="head-mask"></div> </a> <a class="suggest-name" href="" target="_blank">小刚</a> <a class="suggest_follow ui-button ui-button-green suggest-add fr" data-id="442280619" data-name="佘文浩" data-flag="0"><i class="ui-icon ui-iconfont" ></i>一键邀约</a> </li>
-										<li class="suggest-friend fl"> <a class="suggest-userhead" href="" target="_blank"> <img class="suggest-head" src="friend_files/h_main_ptKe_e0f900061eac195a.jpg" onload="photoAdjust(this, 100, 100)" width="100" height="100" style="overflow: hidden; display: inline; visibility: visible;" />
+										<li class="suggest-friend fl"> <a class="suggest-userhead" href="" target="_blank"> <img class="suggest-head" src="images/h_main_ptKe_e0f900061eac195a.jpg" onload="photoAdjust(this, 100, 100)" width="100" height="100" style="overflow: hidden; display: inline; visibility: visible;" />
 											<div class="head-mask"></div> </a> <a class="suggest-name" href="" target="_blank">小美</a> <a class="suggest_follow ui-button ui-button-green suggest-add fr" data-id="350433133" data-name="李琪" data-flag="0"><i class="ui-icon ui-iconfont" ></i>一键邀约</a> </li>
-										<li class="suggest-friend fl"> <a class="suggest-userhead" href="" target="_blank"> <img class="suggest-head" src="friend_files/h_main_fTW9_56330004421e2f76.jpg" onload="photoAdjust(this, 100, 100)" width="100" height="100" style="overflow: hidden; display: inline; visibility: visible;" />
+										<li class="suggest-friend fl"> <a class="suggest-userhead" href="" target="_blank"> <img class="suggest-head" src="images/h_main_fTW9_56330004421e2f76.jpg" onload="photoAdjust(this, 100, 100)" width="100" height="100" style="overflow: hidden; display: inline; visibility: visible;" />
 											<div class="head-mask"></div> </a> <a class="suggest-name" href="" target="_blank">小华</a> <a class="suggest_follow ui-button ui-button-green suggest-add fr" data-id="420502269" data-name="肖涛" data-flag="0"> <i class="ui-icon ui-iconfont" ></i>一键邀约</a> </li>
 										<li class="suggest-friend fl"> <a class="suggest-userhead" href="" target="_blank"> <img class="suggest-head" src="friend_files/h_main_BmN6_2137000000031375.jpg" onload="photoAdjust(this, 100, 100)" width="128" height="100" style="overflow: hidden; display: inline; visibility: visible;" />
 											<div class="head-mask"></div> </a> <a class="suggest-name" href="" target="_blank">刘艳丽</a> <a class="suggest_follow ui-button ui-button-green suggest-add fr" data-id="462329648" data-name="刘艳丽" data-flag="0"><i class="ui-icon ui-iconfont" ></i>一键邀约</a> </li>
@@ -403,258 +383,12 @@
 	})(jQuery);
 
 </script>
-<iframe id="webpagerengine" name="webpagerengine" src="" frameborder="0" style="width: 0px; height: 0px;"></iframe>
-<div id="webpager" style="" class="fold">
-	<a href="javascript:;" class="wp_fold_webpager png" style="display: none;"></a>
-	<div class="wp_top_bubbles"></div>
-	<div class="wp_top_tabs">
-		<div class="wp_top_tab fold png  foldstyle" data-tab="fold">
-			<span class="sn">4</span>
-		</div>
-		<div class="wp_top_tab notify png wp-none" data-tab="notify">
-			<span class="title">通知</span>
-		</div>
-		<div class="wp_top_tab friends png wp-none left" data-tab="friends">
-			<span class="wp_top_tab_friends sn hide">0</span>
-			<span class="title">好友</span>
-			<span class="on_sn" style="display:none">0</span>
-		</div>
-		<div class="wp_top_tab recent png wp-none on" data-tab="recent">
-			<span class="wp_top_tab_recent sn">4</span>
-			<span class="title">会话</span>
-			<span class="on_sn" style="display:none">4</span>
-		</div>
-	</div>
-	<div id="buddy" class="wp-none">
-		<div id="notifyTab" class="wp_tab notify">
-			<div class="wp_collector status" style="display:none;"></div>
-			<div class="wp_collector_box">
-				<div id="notify" class="wp_collector notify"></div>
-			</div>
-		</div>
-		<div id="friendsTab" class="wp_tab friends">
-			<div class="wp_collector search">
-				<a class="wp_search_clear_icon png" style="display:none;"></a>
-				<div class="create_group_opera">
-					<span>建讨论组</span>
-					<span style="margin-top:12px;"> <button type="button" class="png create_cancel"></button> <button type="button" class="png create_ok create_disable"></button> </span>
-					<div style="clear:both;"></div>
-				</div>
-				<div class="wp_search_selected" style="display:none;">
-					<ul>
-					</ul>
-				</div>
-				<div class="wp_search_box">
-					<div class="wp_search_input_box">
-						<input class="wp_search_input" type="text" default-value="找好友或建讨论组" placeholder="找好友或建讨论组" />
-						<div class="wp_search_icon png"></div>
-					</div>
-					<div class="mgr_wrap">
-						<div class="wp_webpager_mgr png wp_mute"></div>
-						<a class="png setting_icon">
-							<div class="setting_wrap" style="display:none;">
-								<div class="png wp_setting_stranger">
-									接收陌生人消息
-									<em class="png status_icon accept_status_icon"></em>
-								</div>
-							</div>
-							<div class="png wp_setting_success" style="display:none;">
-								设置成功！
-							</div> </a>
-					</div>
-					<div class="create_group_wrap">
-						<button type="button" class="png btn_create_group"></button>
-					</div>
-				</div>
-				<a href="javascript:;" class="wp_start_chat" style="display:none;"><em class="png">发起聊天</em></a>
-				<div class="wp_collector_box">
-					<div class="wp_search_list">
-						<ul></ul>
-					</div>
-				</div>
-			</div>
-			<div class="wp_collector status" style="display:none;"></div>
-			<div class="wp_collector_box">
-				<div class="wp_collector assistant"></div>
-				<div id="friends" class="wp_collector friends"></div>
-				<div id="groups" class="wp_collector groups"></div>
-				<div id="accounts" class="wp_collector accounts"></div>
-			</div>
-		</div>
-		<div id="recentTab" class="wp_tab recent">
-			<div class="wp_collector search">
-				<a class="wp_search_clear_icon png" style="display:none;"></a>
-				<div class="create_group_opera">
-					<span>建讨论组</span>
-					<span style="margin-top:12px;"> <button type="button" class="png create_cancel"></button> <button type="button" class="png create_ok create_disable"></button> </span>
-					<div style="clear:both;"></div>
-				</div>
-				<div class="wp_search_selected" style="display:none;">
-					<ul>
-					</ul>
-				</div>
-				<div class="wp_search_box">
-					<div class="wp_search_input_box">
-						<input class="wp_search_input" type="text" default-value="找好友或建讨论组" placeholder="找好友或建讨论组" />
-						<div class="wp_search_icon png"></div>
-					</div>
-					<div class="mgr_wrap">
-						<div class="wp_webpager_mgr png wp_mute"></div>
-						<a class="png setting_icon">
-							<div class="setting_wrap" style="display:none;">
-								<div class="png wp_setting_stranger">
-									接收陌生人消息
-									<em class="png status_icon accept_status_icon"></em>
-								</div>
-							</div>
-							<div class="png wp_setting_success" style="display:none;">
-								设置成功！
-							</div> </a>
-					</div>
-					<div class="create_group_wrap">
-						<button type="button" class="png btn_create_group"></button>
-					</div>
-				</div>
-				<a href="javascript:;" class="wp_start_chat" style="display:none;"><em class="png">发起聊天</em></a>
-				<div class="wp_collector_box">
-					<div class="wp_search_list">
-						<ul></ul>
-					</div>
-				</div>
-			</div>
-			<div class="wp_collector status" style="display:none;"></div>
-			<div class="wp_collector_box">
-				<div class="wp_collector assistant">
-					<ul>
-						<li id="wp_ast_remind" class="piece_box" data-type="remind" data-id="301" data-name="回复助手" data-url="" data-sn="0">
-							<div class="piece_icon png remind">
-								<div class="sn hide">
-									0
-								</div>
-							</div>
-							<div class="piece_info">
-								<span class="piece_name">回复助手</span>
-							</div> </li>
-						<li id="wp_ast_notice" class="piece_box" data-type="notice" data-id="302" data-name="通知助手" data-url="" data-sn="4">
-							<div class="piece_icon png notice">
-								<div class="sn">
-									4
-								</div>
-							</div>
-							<div class="piece_info">
-								<span class="piece_name">通知助手</span>
-							</div> </li>
-					</ul>
-				</div>
-				<div id="recents" class="wp_collector recents">
-					<ul>
-						<li id="wp_b_r_chat_630000003" class="piece_box" data-type="chat" data-id="630000003" data-name="人人墙" data-url="http://fmn.rrimg.com/fmn061/20130913/1930/original_AfWD_62f700002c371260.jpg" data-status="1" data-sn="0">
-							<div class="piece_icon">
-								<div class="sn hide">
-									0
-								</div>
-								<img class="piece_url" namecard="630000003" src="" />
-							</div>
-							<div class="piece_info double">
-								<span class="piece_up_name">人人墙</span>
-								<span class="piece_msg">内容发送成功，“武...</span>
-								<span style="display:none;" class="piece_client png wp-none"></span>
-								<span style="display:none;" class="piece_online png "></span>
-								<span class="piece_del png"></span>
-							</div> </li>
-						<li id="wp_b_r_chat_630000002" class="piece_box" data-type="chat" data-id="630000002" data-name="小黄鸡" data-url="http://fmn.rrimg.com/fmn063/20130821/1810/original_irME_6b0a00003308125f.jpg" data-status="1" data-sn="0">
-							<div class="piece_icon">
-								<div class="sn hide">
-									0
-								</div>
-								<img class="piece_url" namecard="630000002" src="" />
-							</div>
-							<div class="piece_info double">
-								<span class="piece_up_name">小黄鸡</span>
-								<span class="piece_msg">谢主隆恩</span>
-								<span style="display:none;" class="piece_client png wp-none"></span>
-								<span style="display:none;" class="piece_online png "></span>
-								<span class="piece_del png"></span>
-							</div> </li>
-						<li id="wp_b_r_chat_431019959" class="piece_box" data-type="chat" data-id="431019959" data-name="彭子豪" data-url="http://hdn.xnimg.cn/photos/hdn521/20111127/1240/h_tiny_gZxZ_6f920001bec62f76.jpg" data-status="0" data-sn="0">
-							<div class="piece_icon">
-								<div class="sn hide">
-									0
-								</div>
-								<img class="piece_url" namecard="431019959" src="friend_files/h_tiny_gZxZ_6f920001bec62f76.jpg" />
-							</div>
-							<div class="piece_info double">
-								<span class="piece_up_name">彭子豪</span>
-								<span class="piece_msg">我已经接受了你的申...</span>
-								<span style="display:none;" class="piece_client png wp-none"></span>
-								<span style="display:none;" class="piece_online png wp-none"></span>
-								<span class="piece_del png"></span>
-							</div> </li>
-						<li id="wp_b_r_chat_879379191" class="piece_box" data-type="chat" data-id="879379191" data-name="李俊" data-url="http://hdn.xnimg.cn/photos/hdn321/20150616/1510/h_tiny_vu23_e1f90000da37195a.jpg" data-status="0" data-sn="0">
-							<div class="piece_icon">
-								<div class="sn hide">
-									0
-								</div>
-								<img class="piece_url" namecard="879379191" src="friend_files/h_tiny_vu23_e1f90000da37195a.jpg" />
-							</div>
-							<div class="piece_info double">
-								<span class="piece_up_name">李俊</span>
-								<span class="piece_msg">我已经接受了你的申...</span>
-								<span style="display:none;" class="piece_client png wp-none"></span>
-								<span style="display:none;" class="piece_online png wp-none"></span>
-								<span class="piece_del png"></span>
-							</div> </li>
-						<li id="wp_b_r_chat_630000001" class="piece_box" data-type="chat" data-id="630000001" data-name="人人助手" data-url="http://fmn.rrimg.com/fmn062/20141205/1205/original_lmQ1_4142000019c21191.jpg" data-status="1" data-sn="0">
-							<div class="piece_icon">
-								<div class="sn hide">
-									0
-								</div>
 
-							</div>
-							<div class="piece_info double">
-								<span class="piece_up_name">助手</span>
-								<span class="piece_msg"></span>
-								<span style="display:none;" class="piece_client png wp-none"></span>
-								<span style="display:none;" class="piece_online png "></span>
-								<span class="piece_del png"></span>
-							</div> </li>
-						<li id="wp_b_r_chat_724872576" class="piece_box" data-type="chat" data-id="724872576" data-name="袁缘" data-url="http://head.xiaonei.com/photos/0/0/men_tiny.gif" data-status="0" data-sn="0">
-							<div class="piece_icon">
-								<div class="sn hide">
-									0
-								</div>
-								<img class="piece_url" namecard="724872576" src="friend_files/men_tiny.gif" />
-							</div>
-							<div class="piece_info double">
-								<span class="piece_up_name">袁缘</span>
-								<span class="piece_msg">━━４,６丶級.m鎝m...</span>
-								<span style="display:none;" class="piece_client png wp-none"></span>
-								<span style="display:none;" class="piece_online png wp-none"></span>
-								<span class="piece_del png"></span>
-							</div> </li>
-						<li id="wp_b_r_chat_350493761" class="piece_box" data-type="chat" data-id="350493761" data-name="吴桂林" data-url="http://hdn.xnimg.cn/photos/hdn421/20110103/0840/h_tiny_hGl9_35840001a30d2f76.jpg" data-status="0" data-sn="0">
-							<div class="piece_icon">
-								<div class="sn hide">
-									0
-								</div>
-								<img class="piece_url" namecard="350493761" src="friend_files/h_tiny_hGl9_35840001a30d2f76.jpg" />
-							</div>
-							<div class="piece_info double">
-								<span class="piece_up_name">吴桂林</span>
-								<span class="piece_msg">━━【考硏━包过】...</span>
-								<span style="display:none;" class="piece_client png wp-none"></span>
-								<span style="display:none;" class="piece_online png wp-none"></span>
-								<span class="piece_del png"></span>
-							</div> </li>
-					</ul>
-					<div class="wp_loader"></div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-	<div class="vip-skinBtn"></div>
-</div>
+
+
+<!--</div>-->
+<!--	<div class="vip-skinBtn"></div>-->
+<!--</div>-->
 <div id="popup-window-wrap" class="popup-window-wrap" style="right: 0px;">
 
 </div>

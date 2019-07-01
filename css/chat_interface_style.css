@@ -35,8 +35,8 @@ body {
 }
 
 .container {
-  position: relative;
-  top: 50%;
+  position:absolute;
+  top: 320px;
   left: 50%;
   width: 80%;
   height: 75%;
@@ -97,6 +97,7 @@ body {
   border-radius: 50%;
 }
 .container .left .people {
+  height: 500px;
   margin-left: -1px;
   border-right: 1px solid var(--light);
   border-left: 1px solid var(--light);
@@ -199,6 +200,7 @@ body {
   border-style: solid;
   border-color: var(--light);
   height: calc(100% - 48px);
+
   flex-direction: column;
 }
 .container .right .chat.active-chat {

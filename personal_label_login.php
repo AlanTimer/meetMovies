@@ -14,8 +14,11 @@
     <script type="text/javascript" src="script/common.js"></script>
     <script type="text/javascript" src="script/semantic.js"></script>
     <script type="text/javascript" src="script/highslide/highslide-with-gallery.js"></script>
-    <script src="http://open.web.meitu.com/sources/xiuxiu.js" type="text/javascript"></script>
-    <script src="script/meitu.js"></script>
+
+    <link rel="shortcut icon" href="images/logo.ico">
+    <link rel="stylesheet" href="css/personalLabel1.css">
+    <script src="script/personalLabel.js"></script>
+    <script src="script/jquery.min.js"></script>
 </head>
 <body>
 <!--导航-->
@@ -83,71 +86,54 @@
 <!--个人信息-->
 <div class="main">
     <div class="left setting-head">
-        <div class="ui top attached tabular menu new_menu">
-            <a class="item active " data-tab="first">头像设置</a>
-            <a class="item " data-tab="second">资料设置</a>
-            <a class="item"  data-tab="third">更改密码</a>
-        </div>
-        <!--照片-->
-        <div class="ui bottom attached tab segment segment_new active" data-tab="first">
-            <div style="height: 400px">
-                <div id="altContent"></div>
+        <div class="demo">
+            <!--  标题  -->
+            <div class="demo-title">
+                请选择你喜欢的电影标签
             </div>
-        </div>
-        <!--个人基本信息-->
-        <div class="ui bottom attached tab segment segment_new" data-tab="second">
-            <form id="sub"  class="ui form" method="post" action="php/save_setting.php">
-                <div class="field">
-                    <label>用户名</label>
-                    <input type="text"  value="<?php echo $user['username'] ?>" readonly>
-                </div>
-                <div class="field">
-                    <label>注册日期</label>
-                    <input type="text" value="<?php echo $user['register_time'] ?>"
-                           readonly>
-                </div>
-                <div class="field">
-                    <label>性别</label>
-                    <select class="ui fluid dropdown" name="sex">
-                        <option value="保密" <?php if($user['sex'] == '保密'){ echo 'selected'; } ?> >
-                            保密
-                        </option>
-                        <option value="男" <?php if($user['sex'] == '男'){ echo 'selected'; } ?> >
-                            男
-                        </option>
-                        <option value="女" <?php if($user['sex'] == '女'){ echo 'selected'; } ?> >
-                            女
-                        </option>
-                    </select>
-                </div>
-                <div class="field">
-                    <label>qq号</label>
-                    <input type="text" name="qq" value="<?php echo $user['qq'] ?>">
-                </div>
-                <div class="field">
-                    <label>邮箱</label>
-                    <input type="text" name="email" value="<?php echo $user['email'] ?>">
-                </div>
-
-                <button class="ui teal button" type="button" onclick="button_submit()">提交</button>
-            </form>
-        </div>
-        <!--密码-->
-        <div class="ui bottom attached tab segment segment_new" data-tab="third">
-            <div class="ui form">
-                <div class="required field">
-                    <label>原始密码</label>
-                    <input type="password" name="old_password"  id="old_password">
-                </div>
-                <div class="required field">
-                    <label>新密码</label>
-                    <input type="password" name="new_password"  id="new_password">
-                </div>
-                <div class="required field">
-                    <label>确认新密码</label>
-                    <input type="password" name="new_password2" id="new_password2">
-                </div>
-                <div id="save-password" class="ui submit teal  button ">确认</div>
+            <!--  标签  -->
+            <div class="labelDiv">
+                <ul class="row1">
+                    <li1 value="惊悚" onclick="chooseLabel(this)" onmousedown="postLabel(this.innerText)">惊悚</li1>
+                    <li1 value="剧情" onclick="chooseLabel(this)" onmousedown="postLabel(this.innerText)">剧情</li1>
+                    <li1 value="犯罪" onclick="chooseLabel(this)" onmousedown="postLabel(this.innerText)">犯罪</li1>
+                    <li1 value="动作" onclick="chooseLabel(this)" onmousedown="postLabel(this.innerText)">动作</li1>
+                    <li1 value="爱情" onclick="chooseLabel(this)" onmousedown="postLabel(this.innerText)">爱情</li1>
+                </ul>
+                <ul class="row2">
+                    <li1 value="科幻" onclick="chooseLabel(this)" onmousedown="postLabel(this.innerText)">科幻</li1>
+                    <li1 value="悬疑" onclick="chooseLabel(this)" onmousedown="postLabel(this.innerText)">悬疑</li1>
+                    <li1 value="冒险" onclick="chooseLabel(this)" onmousedown="postLabel(this.innerText)">冒险</li1>
+                    <li1 value="喜剧" onclick="chooseLabel(this)" onmousedown="postLabel(this.innerText)">喜剧</li1>
+                    <li1 value="歌舞" onclick="chooseLabel(this)" onmousedown="postLabel(this.innerText)">歌舞</li1>
+                </ul>
+                <ul class="row3">
+                    <li1 value="灾难" onclick="chooseLabel(this)" onmousedown="postLabel(this.innerText)">灾难</li1>
+                    <li1 value="动画" onclick="chooseLabel(this)" onmousedown="postLabel(this.innerText)">动画</li1>
+                    <li1 value="西部" onclick="chooseLabel(this)" onmousedown="postLabel(this.innerText)">西部</li1>
+                    <li1 value="音乐" onclick="chooseLabel(this)" onmousedown="postLabel(this.innerText)">音乐</li1>
+                    <li1 value="古装" onclick="chooseLabel(this)" onmousedown="postLabel(this.innerText)">古装</li1>
+                </ul>
+                <ul class="row4">
+                    <li1 value="家庭" onclick="chooseLabel(this)" onmousedown="postLabel(this.innerText)">家庭</li1>
+                    <li1 value="奇幻" onclick="chooseLabel(this)" onmousedown="postLabel(this.innerText)">奇幻</li1>
+                    <li1 value="战争" onclick="chooseLabel(this)" onmousedown="postLabel(this.innerText)">战争</li1>
+                    <li1 value="同性" onclick="chooseLabel(this)" onmousedown="postLabel(this.innerText)">同性</li1>
+                    <li1 value="情色" onclick="chooseLabel(this)" onmousedown="postLabel(this.innerText)">情色</li1>
+                </ul>
+                <ul class="row5">
+                    <li1 value="传记" onclick="chooseLabel(this)" onmousedown="postLabel(this.innerText)">传记</li1>
+                    <li1 value="历史" onclick="chooseLabel(this)" onmousedown="postLabel(this.innerText)">历史</li1>
+                    <li1 value="儿童" onclick="chooseLabel(this)" onmousedown="postLabel(this.innerText)">儿童</li1>
+                    <li1 value="武侠" onclick="chooseLabel(this)" onmousedown="postLabel(this.innerText)">武侠</li1>
+                    <li1 value="恐怖" onclick="chooseLabel(this)" onmousedown="postLabel(this.innerText)">恐怖</li1>
+                </ul>
+            </div>
+            <div class="label-ok">
+                <!-- 隐藏标签，用来存储选定标签的value值。-->
+                <input type="text" class="storage" id="storage" value="" hidden>
+                <!-- 选好标签 -->
+                <input id="ok-btn" class="ok-btn" type="submit" value="我选好了" name="label-ok" onmouseup="writeLabel()">
             </div>
         </div>
     </div>
