@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/chat_interface_style.css">
     <link rel="stylesheet" type="text/css" href="css/main1.css" />
 </head>
-<body  onload="initBar()" id="<?php echo $user_Id?>">
+<body  onload="initBar()" id="<?php echo $_SESSION['user']['Id']?>">
 <div class="nav">
     <div class="width_1200">
         <ul>
@@ -78,9 +78,13 @@
                         <span><?php echo date('Y-m-d H:i A',$friends_message[$friends[$i]['chat_id']][$j]['send_time'])?></span>
                     </div>
                     <?php }?>
+                    <?php if(strlen($friends_message[$friends[$i]['chat_id']][$j]['message'])==0){?>
+                        <?php continue?>
+                        <?php } ?>
 
                 <?php if($friends_message[$friends[$i]['chat_id']][$j]['to_id']
                 ==$friends[$i]['chat_id']){?>
+
                     <div class="bubble me" id="<?php echo $friends_message[$friends[$i]['chat_id']][$j]['send_time']?>">
                     <?php echo $friends_message[$friends[$i]['chat_id']][$j]['message']?>
                     </div>

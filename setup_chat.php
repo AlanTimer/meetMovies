@@ -2,7 +2,7 @@
 header("Content-type:text/html;charset=utf-8"); //utf-8
 session_start();                    //开始 session
 require "php/config.php";
-$_SESSION['user']['Id']='4';
+//$_SESSION['user']['Id']='1';
 
 $user_Id=$_SESSION['user']['Id'];  //发送者的Id
 date_default_timezone_set('Asia/Shanghai');//'Asia/Shanghai'   亚洲/上海
@@ -28,8 +28,8 @@ foreach ($row as $j => $k){
 //遍历每一项
 foreach ($id_temp as $id_num){
     $temp=array();
-    $sql = "select * from chats where (from_id = '$user_Id' && to_id = '$id_num' )||
-                        (to_id = '$user_Id' && from_id = '$id_num' )  order by send_time DESC";
+    $sql = "select * from chats where ((from_id = '$user_Id' && to_id = '$id_num' )||
+                        (to_id = '$user_Id' && from_id = '$id_num' ) ) order by send_time DESC";
     $res = $pdo->prepare($sql);
     $res->execute();
     $row=$res->fetch(PDO::FETCH_ASSOC);

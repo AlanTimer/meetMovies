@@ -3,6 +3,10 @@ function send_message() {
 
     var input=document.getElementById("message");
     var content=input.value;
+    if(content.length==0){
+        alert("输入不能为空");
+        return;
+    }
    // alert(content);
     var chat=document.getElementsByClassName('active-chat');
     //alert(chat[0].id);
@@ -26,6 +30,11 @@ function send_message() {
         url:"php/push_chat_to_sql.php"
 
     });
+    var active_persons=document.getElementsByClassName('active');
+    var active_person=active_persons[0];
+    var spans=active_person.getElementsByClassName('preview');
+    var  span=spans[0];
+    span.innerHTML=content;
 
 
 }
@@ -91,6 +100,8 @@ function update_message() {
                                     return;
                             }
                         }
+                        if(data[i]['message'].length==0)
+                            return;
 
                         div.innerHTML = data[i]['message'];
                         div.id = data[i]['send_time'];

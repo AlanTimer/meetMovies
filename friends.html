@@ -61,7 +61,7 @@
 	<link href="css/roomkeeper.css" rel="stylesheet" />
 	<link href="css/advert.css" rel="stylesheet" class="lazyload" charset="utf-8" />
 </head>
-<body>
+<body id="<?php echo $Id ?>">
 <div id="BAIDU_DUP_fp_wrapper" style="position: absolute; left: -1px; bottom: -1px; z-index: 0; width: 0px; height: 0px; overflow: hidden; visibility: hidden; display: none;">
 	<iframe id="BAIDU_DUP_fp_iframe" src="" style="width: 0px; height: 0px; visibility: hidden; display: none;"></iframe>
 </div>
@@ -246,8 +246,8 @@
 									<li id="<?php echo $result['username'] ?>"
 											onmouseover="document.getElementById(this.id+'1').style.display='block'"
 										onmouseout="document.getElementById(this.id+'1').style.display='none'" class="friend-detail"  data-type="normal" data-name="<?php echo $result['username'] ?>" id="friendsli331726201">
-										<a class="tiny_photo userhead"  target="_blank">
-											<img src="images/user/<?php echo $result['picture']?>" data-list="card" data-tinyurl="http://hdn.xnimg.cn/photos/hdn321/20140205/1345/h_tiny_nhnX_7b430000b5c1113e.jpg" data-largeurl="http://hdn.xnimg.cn/photos/hdn321/20140205/1345/h_large_AYvj_7b430000b5c1113e.jpg" class="userheadimg large" onload="photoAdjust(this, 168, 150)" width="168" height="168" style="display: inline; visibility: visible;" />
+										<a class="tiny_photo userhead" id="<?php echo $result['Id'] ?>"  target="_self" onclick="enterChat(this)">
+											<img src="images/user/<?php echo $result['picture'] ?>" data-list="card" data-tinyurl="http://hdn.xnimg.cn/photos/hdn321/20140205/1345/h_tiny_nhnX_7b430000b5c1113e.jpg" data-largeurl="http://hdn.xnimg.cn/photos/hdn321/20140205/1345/h_large_AYvj_7b430000b5c1113e.jpg" class="userheadimg large" onload="photoAdjust(this, 168, 150)" width="168" height="168" style="display: inline; visibility: visible;" />
 										</a>
 										<img src="images/del.png" data_id="<?php echo $result['Id'] ?>"
 											 id="<?php echo $result['username'] ?>1"  alt=""
@@ -256,7 +256,7 @@
 
 										<ul class="friends-item-con">
 											<li class="username">
-												<a class="name" "
+												<a class="name"
 												   target="_blank" title="<?php echo $result['username'] ?>">
 													<?php echo $result['username'] ?>
 												</a>
@@ -384,6 +384,6 @@
 <div id="popup-window-wrap" class="popup-window-wrap" style="right: 0px;">
 
 </div>
->
+</div>
 </body>
 </html>
